@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+    <script src="objectshere.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="openingMessage">Strange creatures from another dimension have invaded our world! You must defeat them all!</div>
+<div id="teamMessage">You can only bring three partners with you. Choose wisely.</div>
+
+<div class="wrapper">
+    <tr>
+        <td><input type="text" id="nameArea"/><br>Name your character</td>
+    </tr>
+</div>
+
+<table id="tableId" border="1" cellspacing="0" cellpadding="10">
+    <tr>
+        <td><button id="areaOneButton" onclick="areaOne()">Area 1 (PRESS 1)</button></td>
+    </tr>
+    <tr>
+        <td><button id="areaTwoButton" onclick="areaTwo()">Area 2 (PRESS 2)</button></td>
+    </tr>
+    <tr>
+        <td><button id="areaThreeButton" onclick="areaThree()">Area 3 (PRESS 3)</button></td>
+    </tr>
+    <tr>
+        <td><button id="areaFourButton" onclick="areaFour()">Area 4 (PRESS 4)</button></td>
+    </tr>
+    <tr>
+        <td><button id="areaFiveButton" onclick="areaFive()">Area 5 (PRESS 5)</button></td>
+    </tr>
+    <tr>
+        <td><button id="areaSixButton" onclick="areaSix()">Area 6 (PRESS 6)</button></td>
+    </tr>
+    <tr>
+        <td><button id="areaSevenButton" onclick="areaSeven()">Area 7 (PRESS 7)</button></td>
+    </tr>
+</table>
+
+
+<div class="wrapper">
+    <button onclick="beginAdventure()">OK</button>
+</div>
+
+<button id="chooseTeam" onclick="chooseTeam()">Choose your team</button>
+<button id="confirmTeam" onclick="confirmTeam()">Confirm team</button>
+
+<button id="chooseDecidueye" onclick="chooseDecidueye()">Add to party</button>
+<button id="chooseIncineroar" onclick="chooseIncineroar()">Add to party</button>
+<button id="choosePrimarina" onclick="choosePrimarina()">Add to party</button>
+<button id="chooseCrabominable" onclick="chooseCrabominable()">Add to party</button>
+<button id="chooseOranguru" onclick="chooseOranguru()">Add to party</button>
+<button id="chooseVikavolt" onclick="chooseVikavolt()">Add to party</button>
+
+
+
+
+</body>
+</html>

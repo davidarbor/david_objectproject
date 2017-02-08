@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    vertical-align: top;
+    background: url(http://cdn.bulbagarden.net/upload/thumb/a/ae/Castelia_City.png/300px-Castelia_City.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#roomOneButton{
+    top: 45%;
+    left: 10%;
+}
+
+#roomTwoButton{
+    top: 50%;
+    left: 10%;
+}
+
+#roomThreeButton{
+    top: 55%;
+    left: 10%;
+}
+
+#roomFourButton{
+    top: 60%;
+    left: 10%;
+}
+
+#player{
+    height: 78px;
+    width: 66px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+#tableId{
+    position: absolute;
+    top: 25%;
+    left: 80%;
+}
+
+#chooseTeam{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+#confirmTeam{
+    position: absolute;
+    top: 90%;
+    left: 80%;
+}
+
+#openingMessage{
+    font: bold 60px cambria, sans-serif;
+    text-align: center;
+}
+
+#teamMessage{
+    font: bold 60px cambria, sans-serif;
+    text-align: center;
+}
+
+#chooseDecidueye{
+    position: absolute;
+    top: 80%;
+}
+
+#chooseIncineroar{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+}
+
+#choosePrimarina{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
+#chooseCrabominable{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
+#chooseOranguru{
+    position: absolute;
+    top: 80%;
+    left: 60%;
+}
+
+#chooseVikavolt{
+    position: absolute;
+    top: 80%;
+    left: 75%;
+}
+
+td {
+    vertical-align: top;
+}
+
+table {
+    margin-bottom: 18px;
+}
+
+button {
+    font-size: 30px;
+}
+
+div {
+    margin: 10px 0px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
