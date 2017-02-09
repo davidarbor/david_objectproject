@@ -8,26 +8,6 @@ body {
     background-size: cover;
 }
 
-#roomOneButton{
-    top: 45%;
-    left: 10%;
-}
-
-#roomTwoButton{
-    top: 50%;
-    left: 10%;
-}
-
-#roomThreeButton{
-    top: 55%;
-    left: 10%;
-}
-
-#roomFourButton{
-    top: 60%;
-    left: 10%;
-}
-
 #player{
     height: 78px;
     width: 66px;

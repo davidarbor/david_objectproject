@@ -46,6 +46,15 @@ function confirmTeam(){
     }
 }
 
+function areaOne(){}
+function areaTwo(){}
+function areaThree(){}
+function areaFour(){}
+function areaFive(){}
+function areaSix(){}
+function areaSeven(){}
+
+
 $(document).ready(function(){
     $('#openingMessage').hide();
     $('#teamMessage').hide();
