@@ -87,7 +87,6 @@ var nastyPlot=new Move("Nasty Plot", "Dark", "Status", 0, 0, 0);
 var focusBlast=new Move("Focus Blast", "Fighting", "Special", 120, 70, 0);
 var agility=new Move("Agility", "Psychic", "Status", 0, 0, 0);
 
-
 var sludgeWave=new Move("Sludge Wave", "Poison", "Special", 95, 100, 0);
 var powerGem=new Move("Power Gem", "Rock", "Special", 80, 100, 0);
 var dazzlingGleam=new Move("Dazzling Gleam", "Fairy", "Special", 80, 100, 0);
@@ -185,7 +184,7 @@ nihilego.neutralDamage=["Fighting", "Rock", "Ghost", "Grass", "Electric", "Ice",
 nihilego.resistances=["Normal", "Flying", "Poison", "Bug", "Fire", "Fairy"];
 nihilego.immunities=[];
 
-var buzzwole=new Enemy("Buzzwole", "Bug", "Fighting", 417, 417, 316, 314, 142, 205, 194);
+var buzzwole=new Enemy("Buzzwole", "Bug", "Fighting", 417, 417, 316, 314, 127, 225, 194);
 buzzwole.addMove(bulkUp);
 buzzwole.addMove(leechLife);
 buzzwole.addMove(superpower);

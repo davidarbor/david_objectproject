@@ -39,6 +39,9 @@ function confirmTeam(){
         $('#chooseOranguru').hide();
         $('#chooseVikavolt').hide();
         $('#confirmTeam').hide();
+        for(i=0; i<user.party.length; i++){
+            console.log(user.party[i].currenthp);
+        }
         console.log("Current party: "+user.party[0].name+", "+user.party[1].name+", "+user.party[2].name);
     }
     else{
