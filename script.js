@@ -26,6 +26,15 @@ function chooseTeam(){
     $('#teamMessage').fadeIn(2000);
 }
 
+$(document).ready(function(){
+    $('#decidueyeSelectOutput').html("<img src='" + decidueye.selectionImage + "'>");
+    $('#incineroarSelectOutput').html("<img src='" + incineroar.selectionImage + "'>");
+    $('#primarinaSelectOutput').html("<img src='" + primarina.selectionImage + "'>");
+    $('#crabominableSelectOutput').html("<img src='" + crabominable.selectionImage + "'>");
+    $('#oranguruSelectOutput').html("<img src='" + oranguru.selectionImage + "'>");
+    $('#vikavoltSelectOutput').html("<img src='" + vikavolt.selectionImage + "'>");
+});
+
 function confirmTeam(){
     var yesNo=confirm("You have chosen "+user.party[0].name+", "+user.party[1].name+", and "+user.party[2].name+". Is this alright?");
     if(yesNo==true){

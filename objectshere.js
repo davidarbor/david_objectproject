@@ -20,7 +20,7 @@ function Area(name, numItems){
     this.numItems=numItems;
 }
 
-function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialAttack, specialDefense, speed){
+function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialAttack, specialDefense, speed, selectionImage, battleImage){
     this.name=name;
     this.maxhp=maxhp;
     this.currenthp=currenthp;
@@ -38,9 +38,11 @@ function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialA
     this.neutralDamage=[];
     this.resistances=[];
     this.immunities=[];
+    this.selectionImage=selectionImage;
+    this.battleImage=battleImage;
 }
 
-function Enemy(name, type1, type2, maxhp, currenthp, attack, defense, specialAttack, specialDefense, speed) {
+function Enemy(name, type1, type2, maxhp, currenthp, attack, defense, specialAttack, specialDefense, speed, battleImage) {
     this.name=name;
     this.maxhp=maxhp;
     this.currenthp=currenthp;
@@ -58,6 +60,7 @@ function Enemy(name, type1, type2, maxhp, currenthp, attack, defense, specialAtt
     this.neutralDamage=[];
     this.resistances=[];
     this.immunities=[];
+    this.battleImage=battleImage;
 }
 
 function Move(name, type, category, basePower, baseAccuracy, priority){
@@ -114,7 +117,7 @@ var dragonTail=new Move("Dragon Tail", "Dragon", "Physical", 60, 90, -6);
 var fireBlast=new Move("Fire Blast", "Fire", "Special", 110, 85, 0);
 
 
-var decidueye=new Partner("Decidueye", "Grass", "Ghost", 298, 298, 313, 186, 212, 236, 262);
+var decidueye=new Partner("Decidueye", "Grass", "Ghost", 298, 298, 313, 186, 212, 236, 262, "img/Decidueye.png");
 decidueye.addMove(swordsDance);
 decidueye.addMove(spiritShackle);
 decidueye.addMove(leafBlade);
@@ -124,7 +127,7 @@ decidueye.neutralDamage=["Poison", "Rock", "Bug", "Steel", "Psychic", "Dragon", 
 decidueye.resistances=["Ground", "Water", "Grass", "Electric"];
 decidueye.immunities=["Normal", "Fighting"];
 
-var incineroar=new Partner("Incineroar", "Fire", "Dark", 332, 332, 329, 216, 176, 216, 240);
+var incineroar=new Partner("Incineroar", "Fire", "Dark", 332, 332, 329, 216, 176, 216, 240, "img/Incineroar.png");
 incineroar.addMove(swordsDance);
 incineroar.addMove(flareBlitz);
 incineroar.addMove(darkestLariat);
@@ -134,7 +137,7 @@ incineroar.neutralDamage=["Normal", "Flying", "Poison", "Bug", "Electric", "Drag
 incineroar.resistances=["Ghost", "Steel", "Fire", "Grass", "Ice", "Dark"];
 incineroar.immunities=["Psychic"];
 
-var primarina=new Partner("Primarina", "Water", "Fairy", 364, 364, 165, 185, 386, 268, 156);
+var primarina=new Partner("Primarina", "Water", "Fairy", 364, 364, 165, 185, 386, 268, 156, "img/Primarina.png");
 primarina.addMove(workUp);
 primarina.addMove(scald);
 primarina.addMove(moonblast);
@@ -144,7 +147,7 @@ primarina.neutralDamage=["Normal", "Flying", "Ground", "Rock", "Ghost", "Steel",
 primarina.resistances=["Fighting", "Bug", "Fire", "Water", "Ice", "Dark"];
 primarina.immunities=["Dragon"];
 
-var crabominable=new Partner("Crabominable", "Fighting", "Ice", 398, 398, 399, 190, 144, 171, 122);
+var crabominable=new Partner("Crabominable", "Fighting", "Ice", 398, 398, 399, 190, 144, 171, 122, "img/Crabominable.png");
 crabominable.addMove(powerUpPunch);
 crabominable.addMove(iceHammer);
 crabominable.addMove(closeCombat);
@@ -154,7 +157,7 @@ crabominable.neutralDamage=["Normal", "Poison", "Ground", "Rock", "Ghost", "Wate
 crabominable.resistances=["Bug", "Grass", "Dark"];
 crabominable.immunities=[];
 
-var oranguru=new Partner("Oranguru", "Normal", "Psychic", 384, 384, 140, 197, 306, 256, 156);
+var oranguru=new Partner("Oranguru", "Normal", "Psychic", 384, 384, 140, 197, 306, 256, 156, "img/Oranguru.png");
 oranguru.addMove(nastyPlot);
 oranguru.addMove(psychic);
 oranguru.addMove(focusBlast);
@@ -164,7 +167,7 @@ oranguru.neutralDamage=["Normal", "Fighting", "Flying", "Poison", "Ground", "Roc
 oranguru.resistances=["Psychic"];
 oranguru.immunities=["Ghost"];
 
-var vikavolt=new Partner("Vikavolt", "Bug", "Electric", 296, 296, 158, 216, 389, 186, 203);
+var vikavolt=new Partner("Vikavolt", "Bug", "Electric", 296, 296, 158, 216, 389, 186, 203, "img/Vikavolt.png");
 vikavolt.addMove(agility);
 vikavolt.addMove(thunderbolt);
 vikavolt.addMove(bugBuzz);
