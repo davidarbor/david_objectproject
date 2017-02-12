@@ -22,6 +22,37 @@ body {
     left: 80%;
 }
 
+#decidueyeSelectOutput{
+    position: absolute;
+    top: 20%;
+}
+
+#incineroarSelectOutput{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+#primarinaSelectOutput{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+#crabominableSelectOutput{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+#oranguruSelectOutput{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+#vikavoltSelectOutput{
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+
 #chooseTeam{
     position: absolute;
     top: 40%;
@@ -35,12 +66,12 @@ body {
 }
 
 #openingMessage{
-    font: bold 60px cambria, sans-serif;
+    font: bold 60px cambria, serif;
     text-align: center;
 }
 
 #teamMessage{
-    font: bold 60px cambria, sans-serif;
+    font: bold 60px cambria, serif;
     text-align: center;
 }
 

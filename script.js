@@ -23,6 +23,12 @@ function chooseTeam(){
     $('#chooseVikavolt').show();
     $('#confirmTeam').show();
     $('#chooseTeam').hide();
+    $('#decidueyeSelectOutput').show();
+    $('#incineroarSelectOutput').show();
+    $('#primarinaSelectOutput').show();
+    $('#crabominableSelectOutput').show();
+    $('#oranguruSelectOutput').show();
+    $('#vikavoltSelectOutput').show();
     $('#teamMessage').fadeIn(2000);
 }
 
@@ -77,6 +83,12 @@ $(document).ready(function(){
     $('#chooseCrabominable').hide();
     $('#chooseOranguru').hide();
     $('#chooseVikavolt').hide();
+    $('#decidueyeSelectOutput').hide();
+    $('#incineroarSelectOutput').hide();
+    $('#primarinaSelectOutput').hide();
+    $('#crabominableSelectOutput').hide();
+    $('#oranguruSelectOutput').hide();
+    $('#vikavoltSelectOutput').hide();
     $('#chooseTeam').hide();
     $('#confirmTeam').hide();
 });
