@@ -47,6 +47,7 @@ $(document).ready(function(){
     $('#primarinaBattleOutput').html("<img width='100' height='100' src='" + primarina.battleImage + "'>");
     $('#crabominableBattleOutput').html("<img width='100' height='100' src='" + crabominable.battleImage + "'>");
     $('#oranguruBattleOutput').html("<img width='100' height='100' src='" + oranguru.battleImage + "'>");
+    $('#vikavoltBattleOutput').html("<img width='100' height='100' src='" + vikavolt.battleImage + "'>");
     $('#nihilegoBattleOutput').html("<img width='110' height='100' src='" + nihilego.battleImage + "'>");
     $('#buzzwoleBattleOutput').html("<img width='140' height='150' src='" + buzzwole.battleImage + "'>");
     $('#pheromosaBattleOutput').html("<img width='100' height='170' src='" + pheromosa.battleImage + "'>");
