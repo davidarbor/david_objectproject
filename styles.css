@@ -55,33 +55,75 @@ body {
 
 #decidueyeBattleOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
 }
 
 #incineroarBattleOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 15%;
 }
 #primarinaBattleOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 30%;
 }
 #crabominableBattleOutput{
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 45%;
 }
 #oranguruBattleOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 60%;
 }
 #vikavoltBattleOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 75%;
+}
+
+#nihilegoBattleOutput{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+
+#buzzwoleBattleOutput{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+
+#pheromosaBattleOutput{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+
+#xurkitreeBattleOutput{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+
+#kartanaBattleOutput{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+
+#celesteelaBattleOutput{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+
+#guzzlordBattleOutput{
+    position: absolute;
+    top: 45%;
+    left: 60%;
 }
 
 #chooseTeam{
@@ -94,6 +136,12 @@ body {
     position: absolute;
     top: 90%;
     left: 80%;
+}
+
+#backToHub{
+    position: absolute;
+    top: 45%;
+    left: 35%;
 }
 
 #decidueyeSelectOutput{

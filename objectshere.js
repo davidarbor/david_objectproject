@@ -177,7 +177,7 @@ vikavolt.neutralDamage=["Normal", "Flying", "Poison", "Bug", "Ghost", "Water", "
 vikavolt.resistances=["Fighting", "Steel", "Grass", "Electric"];
 vikavolt.immunities=["Ground"];
 
-var nihilego=new Enemy("Nihilego", "Rock", "Poison", 360, 360, 127, 130, 353, 298, 335);
+var nihilego=new Enemy("Nihilego", "Rock", "Poison", 360, 360, 127, 130, 353, 298, 335, "img/nihilegoSprite.png");
 nihilego.addMove(sludgeWave);
 nihilego.addMove(powerGem);
 nihilego.addMove(dazzlingGleam);
@@ -187,7 +187,7 @@ nihilego.neutralDamage=["Fighting", "Rock", "Ghost", "Grass", "Electric", "Ice",
 nihilego.resistances=["Normal", "Flying", "Poison", "Bug", "Fire", "Fairy"];
 nihilego.immunities=[];
 
-var buzzwole=new Enemy("Buzzwole", "Bug", "Fighting", 417, 417, 316, 314, 127, 225, 194);
+var buzzwole=new Enemy("Buzzwole", "Bug", "Fighting", 417, 417, 316, 314, 127, 225, 194, "img/buzzwoleSprite.png");
 buzzwole.addMove(bulkUp);
 buzzwole.addMove(leechLife);
 buzzwole.addMove(superpower);
@@ -197,7 +197,7 @@ buzzwole.neutralDamage=["Normal", "Poison", "Rock", "Ghost", "Steel", "Water", "
 buzzwole.resistances=["Fighting", "Ground", "Bug", "Grass", "Dark"];
 buzzwole.immunities=[];
 
-var pheromosa=new Enemy("Pheromosa", "Bug", "Fighting", 283, 283, 373, 110, 311, 99, 441);
+var pheromosa=new Enemy("Pheromosa", "Bug", "Fighting", 283, 283, 373, 110, 311, 99, 441, "img/pheromosaSprite.png");
 pheromosa.addMove(highJumpKick);
 pheromosa.addMove(bugBuzz);
 pheromosa.addMove(iceBeam);
@@ -207,7 +207,7 @@ pheromosa.neutralDamage=["Normal", "Poison", "Rock", "Ghost", "Steel", "Water", 
 pheromosa.resistances=["Fighting", "Ground", "Bug", "Grass", "Dark"];
 pheromosa.immunities=[];
 
-var xurkitree=new Enemy("Xurkitree", "Electric", "none", 308, 308, 192, 178, 445, 178, 291);
+var xurkitree=new Enemy("Xurkitree", "Electric", "none", 308, 308, 192, 178, 445, 178, 291, "img/xurkitreeSprite.png");
 xurkitree.addMove(thunderbolt);
 xurkitree.addMove(hiddenPowerIce);
 xurkitree.addMove(grassKnot);
@@ -217,7 +217,7 @@ xurkitree.neutralDamage=["Normal", "Fighting", "Poison", "Rock", "Bug", "Ghost",
 xurkitree.resistances=["Flying", "Steel", "Electric"];
 xurkitree.immunities=[];
 
-var kartana=new Enemy("Kartana", "Grass", "Steel", 259, 259, 460, 298, 138, 100, 348);
+var kartana=new Enemy("Kartana", "Grass", "Steel", 259, 259, 460, 298, 138, 100, 348, "img/kartanaSprite.png");
 kartana.addMove(smartStrike);
 kartana.addMove(leafBlade);
 kartana.addMove(nightSlash);
@@ -227,7 +227,7 @@ kartana.neutralDamage=["Flying", "Ground", "Bug", "Ghost", "Ice", "Dark"];
 kartana.resistances=["Normal", "Rock", "Steel", "Water", "Grass", "Electric", "Psychic", "Dragon", "Fairy"];
 kartana.immunities=["Poison"];
 
-var celesteela=new Enemy("Celesteela", "Steel", "Flying", 398, 398, 238, 255, 251, 288, 158);
+var celesteela=new Enemy("Celesteela", "Steel", "Flying", 398, 398, 238, 255, 251, 288, 158, "img/celesteelaSprite.png");
 celesteela.addMove(leechSeed);
 celesteela.addMove(heavySlam);
 celesteela.addMove(ironDefense);
@@ -237,7 +237,7 @@ celesteela.neutralDamage=["Fighting", "Rock", "Ghost", "Water", "Ice", "Dark"];
 celesteela.resistances=["Normal", "Flying", "Bug", "Steel", "Grass", "Psychic", "Dragon", "Fairy"];
 celesteela.immunities=["Poison", "Ground"];
 
-var guzzlord=new Enemy("Kartana", "Grass", "Steel", 588, 588, 261, 192, 256, 192, 109);
+var guzzlord=new Enemy("Kartana", "Grass", "Steel", 588, 588, 261, 192, 256, 192, 109, "img/guzzlordSprite.png");
 guzzlord.addMove(crunch);
 guzzlord.addMove(dragonTail);
 guzzlord.addMove(fireBlast);
