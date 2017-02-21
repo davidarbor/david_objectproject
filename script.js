@@ -42,19 +42,19 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('#decidueyeBattleOutput').html("<img width='100' height='100' src='" + decidueye.battleImage + "'>");
-    $('#incineroarBattleOutput').html("<img width='100' height='100' src='" + incineroar.battleImage + "'>");
-    $('#primarinaBattleOutput').html("<img width='100' height='100' src='" + primarina.battleImage + "'>");
-    $('#crabominableBattleOutput').html("<img width='100' height='100' src='" + crabominable.battleImage + "'>");
-    $('#oranguruBattleOutput').html("<img width='100' height='100' src='" + oranguru.battleImage + "'>");
-    $('#vikavoltBattleOutput').html("<img width='100' height='100' src='" + vikavolt.battleImage + "'>");
-    $('#nihilegoBattleOutput').html("<img width='110' height='100' src='" + nihilego.battleImage + "'>");
-    $('#buzzwoleBattleOutput').html("<img width='140' height='150' src='" + buzzwole.battleImage + "'>");
-    $('#pheromosaBattleOutput').html("<img width='100' height='170' src='" + pheromosa.battleImage + "'>");
-    $('#xurkitreeBattleOutput').html("<img width='150' height='150' src='" + xurkitree.battleImage + "'>");
-    $('#kartanaBattleOutput').html("<img width='140' height='90' src='" + kartana.battleImage + "'>");
-    $('#celesteelaBattleOutput').html("<img width='210' height='200' src='" + celesteela.battleImage + "'>");
-    $('#guzzlordBattleOutput').html("<img width='205' height='150' src='" + guzzlord.battleImage + "'>");
+    $('#decidueyeBattleOutput').html("<img width='200' height='160' src='" + decidueye.battleImage + "'>");
+    $('#incineroarBattleOutput').html("<img width='200' height='200' src='" + incineroar.battleImage + "'>");
+    $('#primarinaBattleOutput').html("<img width='200' height='200' src='" + primarina.battleImage + "'>");
+    $('#crabominableBattleOutput').html("<img width='200' height='170' src='" + crabominable.battleImage + "'>");
+    $('#oranguruBattleOutput').html("<img width='120' height='120' src='" + oranguru.battleImage + "'>");
+    $('#vikavoltBattleOutput').html("<img width='150' height='120' src='" + vikavolt.battleImage + "'>");
+    $('#nihilegoBattleOutput').html("<img width='120' height='110' src='" + nihilego.battleImage + "'>");
+    $('#buzzwoleBattleOutput').html("<img width='240' height='260' src='" + buzzwole.battleImage + "'>");
+    $('#pheromosaBattleOutput').html("<img width='150' height='220' src='" + pheromosa.battleImage + "'>");
+    $('#xurkitreeBattleOutput').html("<img width='270' height='270' src='" + xurkitree.battleImage + "'>");
+    $('#kartanaBattleOutput').html("<img width='150' height='100' src='" + kartana.battleImage + "'>");
+    $('#celesteelaBattleOutput').html("<img width='320' height='310' src='" + celesteela.battleImage + "'>");
+    $('#guzzlordBattleOutput').html("<img width='345' height='270' src='" + guzzlord.battleImage + "'>");
 });
 
 function confirmTeam(){
@@ -106,7 +106,7 @@ function ubFour(){
 }
 
 function ubFive(){
-    $('#fightTable').hide();$('#nihilegoBattleOutput').hide();
+    $('#fightTable').hide();
     $('#kartanaBattleOutput').show();
 }
 
@@ -116,7 +116,7 @@ function ubSix(){
 }
 
 function ubSeven(){
-    $('#fightTable').hide();$('#nihilegoBattleOutput').hide();
+    $('#fightTable').hide();
     $('#guzzlordBattleOutput').show();
 }
 
