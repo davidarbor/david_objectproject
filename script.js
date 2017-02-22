@@ -87,41 +87,219 @@ function confirmTeam(){
 
 function ubOne(){
     $('#fightTable').hide();
-    $('#nihilegoBattleOutput').show();
+    setTimeout(showNihilego, 500);
+    if(user.party[0]==decidueye){
+        setTimeout(showDecidueye, 2500);
+    }
+    if(user.party[0]==incineroar){
+        setTimeout(showIncineroar, 2500);
+    }
+    if(user.party[0]==primarina){
+        setTimeout(showPrimarina, 2500);
+    }
+    if(user.party[0]==crabominable){
+        setTimeout(showCrabominable, 2500);
+    }
+    if(user.party[0]==oranguru){
+        setTimeout(showOranguru, 2500);
+    }
+    if(user.party[0]==vikavolt){
+        setTimeout(showVikavolt, 2500);
+    }
 }
 
 function ubTwo(){
     $('#fightTable').hide();
-    $('#buzzwoleBattleOutput').show();
+    setTimeout(showBuzzwole, 500);
+    if(user.party[0]==decidueye){
+        setTimeout(showDecidueye, 2500);
+    }
+    if(user.party[0]==incineroar){
+        setTimeout(showIncineroar, 2500);
+    }
+    if(user.party[0]==primarina){
+        setTimeout(showPrimarina, 2500);
+    }
+    if(user.party[0]==crabominable){
+        setTimeout(showCrabominable, 2500);
+    }
+    if(user.party[0]==oranguru){
+        setTimeout(showOranguru, 2500);
+    }
+    if(user.party[0]==vikavolt){
+        setTimeout(showVikavolt, 2500);
+    }
 }
 
 function ubThree(){
     $('#fightTable').hide();
-    $('#pheromosaBattleOutput').show();
+    setTimeout(showPheromosa, 500);
+    if(user.party[0]==decidueye){
+        setTimeout(showDecidueye, 2500);
+    }
+    if(user.party[0]==incineroar){
+        setTimeout(showIncineroar, 2500);
+    }
+    if(user.party[0]==primarina){
+        setTimeout(showPrimarina, 2500);
+    }
+    if(user.party[0]==crabominable){
+        setTimeout(showCrabominable, 2500);
+    }
+    if(user.party[0]==oranguru){
+        setTimeout(showOranguru, 2500);
+    }
+    if(user.party[0]==vikavolt){
+        setTimeout(showVikavolt, 2500);
+    }
 }
 
 function ubFour(){
     $('#fightTable').hide();
-    $('#xurkitreeBattleOutput').show();
+    setTimeout(showXurkitree, 500);
+    if(user.party[0]==decidueye){
+        setTimeout(showDecidueye, 2500);
+    }
+    if(user.party[0]==incineroar){
+        setTimeout(showIncineroar, 2500);
+    }
+    if(user.party[0]==primarina){
+        setTimeout(showPrimarina, 2500);
+    }
+    if(user.party[0]==crabominable){
+        setTimeout(showCrabominable, 2500);
+    }
+    if(user.party[0]==oranguru){
+        setTimeout(showOranguru, 2500);
+    }
+    if(user.party[0]==vikavolt){
+        setTimeout(showVikavolt, 2500);
+    }
 }
 
 function ubFive(){
     $('#fightTable').hide();
-    $('#kartanaBattleOutput').show();
+    setTimeout(showKartana, 500);
+    if(user.party[0]==decidueye){
+        setTimeout(showDecidueye, 2500);
+    }
+    if(user.party[0]==incineroar){
+        setTimeout(showIncineroar, 2500);
+    }
+    if(user.party[0]==primarina){
+        setTimeout(showPrimarina, 2500);
+    }
+    if(user.party[0]==crabominable){
+        setTimeout(showCrabominable, 2500);
+    }
+    if(user.party[0]==oranguru){
+        setTimeout(showOranguru, 2500);
+    }
+    if(user.party[0]==vikavolt){
+        setTimeout(showVikavolt, 2500);
+    }
 }
 
 function ubSix(){
     $('#fightTable').hide();
-    $('#celesteelaBattleOutput').show();
+    setTimeout(showCelesteela, 500);
+    if(user.party[0]==decidueye){
+        setTimeout(showDecidueye, 2500);
+    }
+    if(user.party[0]==incineroar){
+        setTimeout(showIncineroar, 2500);
+    }
+    if(user.party[0]==primarina){
+        setTimeout(showPrimarina, 2500);
+    }
+    if(user.party[0]==crabominable){
+        setTimeout(showCrabominable, 2500);
+    }
+    if(user.party[0]==oranguru){
+        setTimeout(showOranguru, 2500);
+    }
+    if(user.party[0]==vikavolt){
+        setTimeout(showVikavolt, 2500);
+    }
 }
 
 function ubSeven(){
     $('#fightTable').hide();
-    $('#guzzlordBattleOutput').show();
+    setTimeout(showGuzzlord, 500);
+    if(user.party[0]==decidueye){
+        setTimeout(showDecidueye, 2500);
+    }
+    if(user.party[0]==incineroar){
+        setTimeout(showIncineroar, 2500);
+    }
+    if(user.party[0]==primarina){
+        setTimeout(showPrimarina, 2500);
+    }
+    if(user.party[0]==crabominable){
+        setTimeout(showCrabominable, 2500);
+    }
+    if(user.party[0]==oranguru){
+        setTimeout(showOranguru, 2500);
+    }
+    if(user.party[0]==vikavolt){
+        setTimeout(showVikavolt, 2500);
+    }
 }
 
 function backToHub(){
     $('#fightTable').show();
+}
+
+function showDecidueye(){
+    $('#decidueyeBattleOutput').show();
+}
+
+function showIncineroar(){
+    $('#incineroarBattleOutput').show();
+}
+
+function showPrimarina(){
+    $('#primarinaBattleOutput').show();
+}
+
+function showCrabominable(){
+    $('#crabominableBattleOutput').show();
+}
+
+function showOranguru(){
+    $('#oranguruBattleOutput').show();
+}
+
+function showVikavolt(){
+    $('#vikavoltBattleOutput').show();
+}
+
+function showNihilego(){
+    $('#nihilegoBattleOutput').show();
+}
+
+function showBuzzwole(){
+    $('#buzzwoleBattleOutput').show();
+}
+
+function showPheromosa(){
+    $('#pheromosaBattleOutput').show();
+}
+
+function showXurkitree(){
+    $('#xurkitreeBattleOutput').show();
+}
+
+function showKartana(){
+    $('#kartanaBattleOutput').show();
+}
+
+function showCelesteela(){
+    $('#celesteelaBattleOutput').show();
+}
+
+function showGuzzlord(){
+    $('#guzzlordBattleOutput').show();
 }
 
 $(document).ready(function(){
