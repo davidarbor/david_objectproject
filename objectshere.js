@@ -9,17 +9,6 @@ function Character(name){
     }
 }
 
-function Item(name, strength, weakness){
-    this.name=name;
-    this.strength=strength;
-    this.weakness=weakness;
-}
-
-function Area(name, numItems){
-    this.name=name;
-    this.numItems=numItems;
-}
-
 function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialAttack, specialDefense, speed, selectionImage, battleImage){
     this.name=name;
     this.maxhp=maxhp;
