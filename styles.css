@@ -8,57 +8,49 @@ body {
     background-size: cover;
 }
 
-#player{
-    height: 78px;
-    width: 66px;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-}
-
 #fightTable{
     position: absolute;
     top: 25%;
     left: 80%;
 }
 
+
 #decidueyeSelectOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
 }
-
 #incineroarSelectOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 15%;
 }
 #primarinaSelectOutput{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 45%;
+    left: 31%;
 }
 #crabominableSelectOutput{
     position: absolute;
-    top: 20%;
-    left: 45%;
+    top: 40%;
+    left: 43%;
 }
 #oranguruSelectOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 60%;
 }
 #vikavoltSelectOutput{
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 75%;
 }
+
 
 #decidueyeBattleOutput{
     position: absolute;
     top: 50%;
     left: 20%;
 }
-
 #incineroarBattleOutput{
     position: absolute;
     top: 45%;
@@ -85,140 +77,95 @@ body {
     left: 20%;
 }
 
+
 #nihilegoBattleOutput{
     position: absolute;
     top: 47%;
     left: 60%;
 }
-
 #buzzwoleBattleOutput{
     position: absolute;
     top: 37%;
     left: 60%;
 }
-
 #pheromosaBattleOutput{
     position: absolute;
     top: 42%;
     left: 60%;
 }
-
 #xurkitreeBattleOutput{
     position: absolute;
     top: 38%;
     left: 55%;
 }
-
 #kartanaBattleOutput{
     position: absolute;
     top: 56%;
     left: 60%;
 }
-
 #celesteelaBattleOutput{
     position: absolute;
     top: 20%;
     left: 60%;
 }
-
 #guzzlordBattleOutput{
     position: absolute;
     top: 40%;
     left: 60%;
 }
 
+
 #chooseTeam{
     position: absolute;
     top: 40%;
     left: 45%;
 }
-
 #confirmTeam{
     position: absolute;
     top: 90%;
     left: 80%;
 }
-
 #backToHub{
     position: absolute;
     top: 45%;
     left: 35%;
 }
 
-#decidueyeSelectOutput{
-    position: absolute;
-    top: 45%;
-}
-
-#incineroarSelectOutput{
-    position: absolute;
-    top: 45%;
-    left: 15%;
-}
-
-#primarinaSelectOutput{
-    position: absolute;
-    top: 45%;
-    left: 31%;
-}
-
-#crabominableSelectOutput{
-    position: absolute;
-    top: 40%;
-    left: 43%;
-}
-
-#oranguruSelectOutput{
-    position: absolute;
-    top: 45%;
-    left: 60%;
-}
-
-#vikavoltSelectOutput{
-    position: absolute;
-    top: 45%;
-    left: 75%;
-}
 
 #openingMessage{
     font: bold 60px cambria, serif;
     text-align: center;
 }
-
 #teamMessage{
     font: bold 60px cambria, serif;
     text-align: center;
 }
 
+
 #chooseDecidueye{
     position: absolute;
     top: 80%;
 }
-
 #chooseIncineroar{
     position: absolute;
     top: 80%;
     left: 15%;
 }
-
 #choosePrimarina{
     position: absolute;
     top: 80%;
     left: 30%;
 }
-
 #chooseCrabominable{
     position: absolute;
     top: 80%;
     left: 45%;
 }
-
 #chooseOranguru{
     position: absolute;
     top: 80%;
     left: 60%;
 }
-
 #chooseVikavolt{
     position: absolute;
     top: 80%;

@@ -54,7 +54,7 @@ $(document).ready(function(){
     $('#xurkitreeBattleOutput').html("<img width='270' height='270' src='" + xurkitree.battleImage + "'>");
     $('#kartanaBattleOutput').html("<img width='150' height='100' src='" + kartana.battleImage + "'>");
     $('#celesteelaBattleOutput').html("<img width='320' height='310' src='" + celesteela.battleImage + "'>");
-    $('#guzzlordBattleOutput').html("<img width='345' height='270' src='" + guzzlord.battleImage + "'>");
+    $('#guzzlordBattleOutput').html("<img width='350' height='270' src='" + guzzlord.battleImage + "'>");
 });
 
 function confirmTeam(){
@@ -356,6 +356,6 @@ function chooseOranguru(){
     user.addToParty(oranguru);
 }
 
-function chooseVikavolt(){
+function chooseVikavolt() {
     user.addToParty(vikavolt);
 }
