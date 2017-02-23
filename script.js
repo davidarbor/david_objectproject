@@ -248,6 +248,7 @@ function ubSeven(){
 
 function backToHub(){
     $('#fightTable').show();
+    $('#backToHub').hide();
 }
 
 function showDecidueye(){
@@ -307,24 +308,28 @@ $(document).ready(function(){
     $('#teamMessage').hide();
     $('#fightTable').hide();
     $('#backToHub').hide();
+
     $('#chooseDecidueye').hide();
     $('#chooseIncineroar').hide();
     $('#choosePrimarina').hide();
     $('#chooseCrabominable').hide();
     $('#chooseOranguru').hide();
     $('#chooseVikavolt').hide();
+
     $('#decidueyeSelectOutput').hide();
     $('#incineroarSelectOutput').hide();
     $('#primarinaSelectOutput').hide();
     $('#crabominableSelectOutput').hide();
     $('#oranguruSelectOutput').hide();
     $('#vikavoltSelectOutput').hide();
+
     $('#decidueyeBattleOutput').hide();
     $('#incineroarBattleOutput').hide();
     $('#primarinaBattleOutput').hide();
     $('#crabominableBattleOutput').hide();
     $('#oranguruBattleOutput').hide();
     $('#vikavoltBattleOutput').hide();
+
     $('#nihilegoBattleOutput').hide();
     $('#buzzwoleBattleOutput').hide();
     $('#pheromosaBattleOutput').hide();
@@ -332,6 +337,7 @@ $(document).ready(function(){
     $('#kartanaBattleOutput').hide();
     $('#celesteelaBattleOutput').hide();
     $('#guzzlordBattleOutput').hide();
+
     $('#chooseTeam').hide();
     $('#confirmTeam').hide();
 });
