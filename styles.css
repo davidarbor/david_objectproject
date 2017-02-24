@@ -131,6 +131,43 @@ body {
     left: 35%;
 }
 
+#moveButtonOne{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+#moveButtonTwo{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#moveButtonThree{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+#moveButtonFour{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+
+#changeFirstPartyMember{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+#moveSecond{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+#moveThird{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+
 
 #openingMessage{
     font: bold 60px cambria, serif;

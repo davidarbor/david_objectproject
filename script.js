@@ -31,6 +31,8 @@ function chooseTeam(){
     $('#teamMessage').fadeIn(2000);
 }
 
+
+
 $(document).ready(function(){
     $('#decidueyeSelectOutput').html("<img width='180' height='180' src='" + decidueye.selectionImage + "'>");
     $('#incineroarSelectOutput').html("<img width='180' height='180'  src='" + incineroar.selectionImage + "'>");
@@ -61,6 +63,7 @@ function confirmTeam(){
     if(yesNo==true){
         $('#teamMessage').fadeOut(500);
         $('#fightTable').show();
+        $('#changeFirstPartyMember').show();
         $('#confirmTeam').hide();
         $('#chooseDecidueye').hide();
         $('#chooseIncineroar').hide();
@@ -84,165 +87,354 @@ function confirmTeam(){
     }
 }
 
+function changeFirstPartyMember(){
+    $('#changeFirstPartyMember').hide();
+    $('#moveSecond').show();
+    $('#moveThird').show();
+}
+
+
 function ubOne(){
     $('#fightTable').hide();
+    setTimeout(showMoveButtons, 3500);
     setTimeout(showNihilego, 500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
+        document.getElementById('moveButtonThree').textContent="Leaf Blade";
+        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
+        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        document.getElementById('moveButtonOne').textContent="Work Up";
+        document.getElementById('moveButtonTwo').textContent="Scald";
+        document.getElementById('moveButtonThree').textContent="Moonblast";
+        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
+        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
+        document.getElementById('moveButtonThree').textContent="Close Combat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        document.getElementById('moveButtonOne').textContent="Nasty Plot";
+        document.getElementById('moveButtonTwo').textContent="Psychic";
+        document.getElementById('moveButtonThree').textContent="Focus Blast";
+        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        document.getElementById('moveButtonOne').textContent="Agility";
+        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
+        document.getElementById('moveButtonThree').textContent="Bug Buzz";
+        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
 }
 
 function ubTwo(){
     $('#fightTable').hide();
+    setTimeout(showMoveButtons, 3500);
     setTimeout(showBuzzwole, 500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
+        document.getElementById('moveButtonThree').textContent="Leaf Blade";
+        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
+        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        document.getElementById('moveButtonOne').textContent="Work Up";
+        document.getElementById('moveButtonTwo').textContent="Scald";
+        document.getElementById('moveButtonThree').textContent="Moonblast";
+        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
+        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
+        document.getElementById('moveButtonThree').textContent="Close Combat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        document.getElementById('moveButtonOne').textContent="Nasty Plot";
+        document.getElementById('moveButtonTwo').textContent="Psychic";
+        document.getElementById('moveButtonThree').textContent="Focus Blast";
+        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        document.getElementById('moveButtonOne').textContent="Agility";
+        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
+        document.getElementById('moveButtonThree').textContent="Bug Buzz";
+        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
 }
 
 function ubThree(){
     $('#fightTable').hide();
+    setTimeout(showMoveButtons, 3500);
     setTimeout(showPheromosa, 500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
+        document.getElementById('moveButtonThree').textContent="Leaf Blade";
+        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
+        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        document.getElementById('moveButtonOne').textContent="Work Up";
+        document.getElementById('moveButtonTwo').textContent="Scald";
+        document.getElementById('moveButtonThree').textContent="Moonblast";
+        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
+        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
+        document.getElementById('moveButtonThree').textContent="Close Combat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        document.getElementById('moveButtonOne').textContent="Nasty Plot";
+        document.getElementById('moveButtonTwo').textContent="Psychic";
+        document.getElementById('moveButtonThree').textContent="Focus Blast";
+        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        document.getElementById('moveButtonOne').textContent="Agility";
+        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
+        document.getElementById('moveButtonThree').textContent="Bug Buzz";
+        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
 }
 
 function ubFour(){
     $('#fightTable').hide();
+    setTimeout(showMoveButtons, 3500);
     setTimeout(showXurkitree, 500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
+        document.getElementById('moveButtonThree').textContent="Leaf Blade";
+        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
+        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        document.getElementById('moveButtonOne').textContent="Work Up";
+        document.getElementById('moveButtonTwo').textContent="Scald";
+        document.getElementById('moveButtonThree').textContent="Moonblast";
+        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
+        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
+        document.getElementById('moveButtonThree').textContent="Close Combat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        document.getElementById('moveButtonOne').textContent="Nasty Plot";
+        document.getElementById('moveButtonTwo').textContent="Psychic";
+        document.getElementById('moveButtonThree').textContent="Focus Blast";
+        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        document.getElementById('moveButtonOne').textContent="Agility";
+        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
+        document.getElementById('moveButtonThree').textContent="Bug Buzz";
+        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
 }
 
 function ubFive(){
     $('#fightTable').hide();
+    setTimeout(showMoveButtons, 3500);
     setTimeout(showKartana, 500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
+        document.getElementById('moveButtonThree').textContent="Leaf Blade";
+        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
+        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        document.getElementById('moveButtonOne').textContent="Work Up";
+        document.getElementById('moveButtonTwo').textContent="Scald";
+        document.getElementById('moveButtonThree').textContent="Moonblast";
+        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
+        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
+        document.getElementById('moveButtonThree').textContent="Close Combat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        document.getElementById('moveButtonOne').textContent="Nasty Plot";
+        document.getElementById('moveButtonTwo').textContent="Psychic";
+        document.getElementById('moveButtonThree').textContent="Focus Blast";
+        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        document.getElementById('moveButtonOne').textContent="Agility";
+        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
+        document.getElementById('moveButtonThree').textContent="Bug Buzz";
+        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
 }
 
 function ubSix(){
     $('#fightTable').hide();
+    setTimeout(showMoveButtons, 3500);
     setTimeout(showCelesteela, 500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
+        document.getElementById('moveButtonThree').textContent="Leaf Blade";
+        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
+        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        document.getElementById('moveButtonOne').textContent="Work Up";
+        document.getElementById('moveButtonTwo').textContent="Scald";
+        document.getElementById('moveButtonThree').textContent="Moonblast";
+        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
+        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
+        document.getElementById('moveButtonThree').textContent="Close Combat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        document.getElementById('moveButtonOne').textContent="Nasty Plot";
+        document.getElementById('moveButtonTwo').textContent="Psychic";
+        document.getElementById('moveButtonThree').textContent="Focus Blast";
+        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        document.getElementById('moveButtonOne').textContent="Agility";
+        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
+        document.getElementById('moveButtonThree').textContent="Bug Buzz";
+        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
 }
 
 function ubSeven(){
     $('#fightTable').hide();
+    setTimeout(showMoveButtons, 3500);
     setTimeout(showGuzzlord, 500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
+        document.getElementById('moveButtonThree').textContent="Leaf Blade";
+        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        document.getElementById('moveButtonOne').textContent="Swords Dance";
+        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
+        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        document.getElementById('moveButtonOne').textContent="Work Up";
+        document.getElementById('moveButtonTwo').textContent="Scald";
+        document.getElementById('moveButtonThree').textContent="Moonblast";
+        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
+        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
+        document.getElementById('moveButtonThree').textContent="Close Combat";
+        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        document.getElementById('moveButtonOne').textContent="Nasty Plot";
+        document.getElementById('moveButtonTwo').textContent="Psychic";
+        document.getElementById('moveButtonThree').textContent="Focus Blast";
+        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        document.getElementById('moveButtonOne').textContent="Agility";
+        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
+        document.getElementById('moveButtonThree').textContent="Bug Buzz";
+        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
+}
+
+function showMoveButtons(){
+    $('#moveButtonOne').show();
+    $('#moveButtonTwo').show();
+    $('#moveButtonThree').show();
+    $('#moveButtonFour').show();
 }
 
 function backToHub(){
@@ -339,6 +531,15 @@ $(document).ready(function(){
 
     $('#chooseTeam').hide();
     $('#confirmTeam').hide();
+
+    $('#changeFirstPartyMember').hide();
+    $('#moveSecond').hide();
+    $('#moveThird').hide();
+
+    $('#moveButtonOne').hide();
+    $('#moveButtonTwo').hide();
+    $('#moveButtonThree').hide();
+    $('#moveButtonFour').hide();
 });
 
 function chooseDecidueye(){
