@@ -7,14 +7,12 @@ function beginAdventure(){
     console.log(user);
     $('#nameArea').hide();
     $('.wrapper').hide();
-    var startTown=new Area("Starting Town", 2);
     $('#openingMessage').fadeIn(3000);
     $('#openingMessage').fadeOut(500);
     $('#chooseTeam').show();
 }
 
 function chooseTeam(){
-    $('#openingMessage').hide();
     $('#chooseDecidueye').show();
     $('#chooseIncineroar').show();
     $('#choosePrimarina').show();
@@ -27,6 +25,7 @@ function chooseTeam(){
     $('#crabominableSelectOutput').show();
     $('#oranguruSelectOutput').show();
     $('#vikavoltSelectOutput').show();
+    $('#openingMessage').hide();
     $('#confirmTeam').show();
     $('#chooseTeam').hide();
     $('#teamMessage').fadeIn(2000);
