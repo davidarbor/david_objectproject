@@ -91,11 +91,52 @@ function changeFirstPartyMember(){
     $('#changeFirstPartyMember').hide();
     $('#moveSecond').show();
     $('#moveThird').show();
+    $('#confirmSwitchSecond').show();
+    $('#confirmSwitchThird').show();
+    $('#cancelSwitch').show();
+}
+
+function swapParty(input, index_A, index_B) {
+    var temp = input[index_A];
+
+    input[index_A] = input[index_B];
+    input[index_B] = temp;
+}
+
+function moveSecond(){
+    swapParty(user.party, 0, 1);
+}
+
+function moveThird(){
+    swapParty(user.party, 0, 2);
+}
+
+function confirmSwitchSecond(){
+    var switchConfirmation=confirm("Your party order is "+user.party[0].name+", "+user.party[1].name+", and "+user.party[2].name+". Is this alright?");
+    if(switchConfirmation==true){
+        console.log("Current party: "+user.party[0].name+", "+user.party[1].name+", "+user.party[2].name);
+        alert("Hit the button again to reverse this switch.");
+    }
+    else{
+        console.log(false);
+    }
+}
+
+function confirmSwitchThird(){
+    var switchConfirmation=confirm("Your party order is "+user.party[0].name+", "+user.party[1].name+", and "+user.party[2].name+". Is this alright?");
+    if(switchConfirmation==true){
+        console.log("Current party: "+user.party[0].name+", "+user.party[1].name+", "+user.party[2].name);
+        alert("Hit the button again to reverse this switch.");
+    }
+    else{
+        console.log(false);
+    }
 }
 
 
 function ubOne(){
     $('#fightTable').hide();
+    $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 3500);
     setTimeout(showNihilego, 500);
     if(user.party[0]==decidueye){
@@ -144,6 +185,7 @@ function ubOne(){
 
 function ubTwo(){
     $('#fightTable').hide();
+    $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 3500);
     setTimeout(showBuzzwole, 500);
     if(user.party[0]==decidueye){
@@ -192,6 +234,7 @@ function ubTwo(){
 
 function ubThree(){
     $('#fightTable').hide();
+    $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 3500);
     setTimeout(showPheromosa, 500);
     if(user.party[0]==decidueye){
@@ -240,6 +283,7 @@ function ubThree(){
 
 function ubFour(){
     $('#fightTable').hide();
+    $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 3500);
     setTimeout(showXurkitree, 500);
     if(user.party[0]==decidueye){
@@ -288,6 +332,7 @@ function ubFour(){
 
 function ubFive(){
     $('#fightTable').hide();
+    $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 3500);
     setTimeout(showKartana, 500);
     if(user.party[0]==decidueye){
@@ -336,6 +381,7 @@ function ubFive(){
 
 function ubSix(){
     $('#fightTable').hide();
+    $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 3500);
     setTimeout(showCelesteela, 500);
     if(user.party[0]==decidueye){
@@ -384,6 +430,7 @@ function ubSix(){
 
 function ubSeven(){
     $('#fightTable').hide();
+    $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 3500);
     setTimeout(showGuzzlord, 500);
     if(user.party[0]==decidueye){
@@ -535,6 +582,9 @@ $(document).ready(function(){
     $('#changeFirstPartyMember').hide();
     $('#moveSecond').hide();
     $('#moveThird').hide();
+    $('#confirmSwitchSecond').hide();
+    $('#confirmSwitchThird').hide();
+    $('#cancelSwitch').hide();
 
     $('#moveButtonOne').hide();
     $('#moveButtonTwo').hide();

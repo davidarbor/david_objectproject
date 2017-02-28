@@ -118,7 +118,7 @@ body {
 #chooseTeam{
     position: absolute;
     top: 40%;
-    left: 45%;
+    left: 43%;
 }
 #confirmTeam{
     position: absolute;
@@ -159,12 +159,27 @@ body {
 }
 #moveSecond{
     position: absolute;
-    top: 35%;
+    top: 20%;
+    left: 5%;
+}
+#confirmSwitchSecond{
+    position: absolute;
+    top: 30%;
     left: 5%;
 }
 #moveThird{
     position: absolute;
-    top: 55%;
+    top: 50%;
+    left: 5%;
+}
+#confirmSwitchThird{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+#cancelSwitch{
+    position: absolute;
+    top: 80%;
     left: 5%;
 }
 
