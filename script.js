@@ -93,7 +93,7 @@ function changeFirstPartyMember(){
     $('#moveThird').show();
     $('#confirmSwitchSecond').show();
     $('#confirmSwitchThird').show();
-    $('#cancelSwitch').show();
+    $('#exitSwitch').show();
 }
 
 function swapParty(input, index_A, index_B) {
@@ -133,6 +133,15 @@ function confirmSwitchThird(){
         console.log(false);
         alert("You need to hit the button again to reverse this switch.");
     }
+}
+
+function exitSwitch(){
+    $('#changeFirstPartyMember').hide();
+    $('#moveSecond').hide();
+    $('#moveThird').hide();
+    $('#confirmSwitchSecond').hide();
+    $('#confirmSwitchThird').hide();
+    $('#exitSwitch').hide();
 }
 
 
@@ -586,7 +595,7 @@ $(document).ready(function(){
     $('#moveThird').hide();
     $('#confirmSwitchSecond').hide();
     $('#confirmSwitchThird').hide();
-    $('#cancelSwitch').hide();
+    $('#exitSwitch').hide();
 
     $('#moveButtonOne').hide();
     $('#moveButtonTwo').hide();
