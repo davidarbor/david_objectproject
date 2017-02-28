@@ -230,7 +230,7 @@ celesteela.neutralDamage=["Fighting", "Rock", "Ghost", "Water", "Ice", "Dark"];
 celesteela.resistances=["Normal", "Flying", "Bug", "Steel", "Grass", "Psychic", "Dragon", "Fairy"];
 celesteela.immunities=["Poison", "Ground"];
 
-var guzzlord=new Enemy("Kartana", "Grass", "Steel", 588, 588, 261, 192, 256, 192, 109, "img/guzzlordSprite.png");
+var guzzlord=new Enemy("Guzzlord", "Dark", "Dragon", 588, 588, 261, 192, 256, 192, 109, "img/guzzlordSprite.png");
 guzzlord.addMove(crunch);
 guzzlord.addMove(dragonTail);
 guzzlord.addMove(fireBlast);
