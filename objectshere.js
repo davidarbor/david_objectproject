@@ -11,6 +11,8 @@ function Character(name){
 
 function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialAttack, specialDefense, speed, selectionImage, battleImage){
     this.name=name;
+    this.type1=type1;
+    this.type2=type2;
     this.maxhp=maxhp;
     this.currenthp=currenthp;
     this.attack=attack;
@@ -22,7 +24,7 @@ function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialA
     this.moves=[];
     this.addMove=function(move){
         this.moves.push(move);
-    }
+    };
     this.weaknesses=[];
     this.neutralDamage=[];
     this.resistances=[];
@@ -33,6 +35,8 @@ function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialA
 
 function Enemy(name, type1, type2, maxhp, currenthp, attack, defense, specialAttack, specialDefense, speed, battleImage) {
     this.name=name;
+    this.type1=type1;
+    this.type2=type2;
     this.maxhp=maxhp;
     this.currenthp=currenthp;
     this.attack=attack;
