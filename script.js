@@ -119,6 +119,7 @@ function confirmSwitchSecond(){
     }
     else{
         console.log(false);
+        alert("You need to hit the button again to reverse this switch.");
     }
 }
 
@@ -130,6 +131,7 @@ function confirmSwitchThird(){
     }
     else{
         console.log(false);
+        alert("You need to hit the button again to reverse this switch.");
     }
 }
 
