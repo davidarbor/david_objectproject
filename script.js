@@ -144,6 +144,22 @@ function exitSwitch(){
     $('#exitSwitch').hide();
 }
 
+function useMoveOne(){
+    var move1=user.party[0].moves[0].name;
+}
+
+function useMoveTwo(){
+
+}
+
+function useMoveThree(){
+
+}
+
+function useMoveFour(){
+
+}
+
 
 function ubOne(){
     $('#fightTable').hide();
