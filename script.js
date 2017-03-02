@@ -164,10 +164,16 @@ function useMoveFour(){
 function ubOne(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showMoveButtons, 3500);
+    setTimeout(showMoveButtons, 4500);
     setTimeout(showNihilego, 500);
+    $('#nihiBattleMessage').html("Nihilego appeared!");
+    setTimeout(showNiBM, 500);
+    setTimeout(hideNiBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        $('#deciBattleMessage').html("Go! Decidueye!");
+        setTimeout(showDeBM, 2500);
+        setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
         document.getElementById('moveButtonThree').textContent="Leaf Blade";
@@ -175,6 +181,9 @@ function ubOne(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        $('#inciBattleMessage').html("Go! Incineroar!");
+        setTimeout(showInBM, 2500);
+        setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Flare Blitz";
         document.getElementById('moveButtonThree').textContent="Darkest Lariat";
@@ -182,6 +191,9 @@ function ubOne(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        $('#primBattleMessage').html("Go! Primarina!");
+        setTimeout(showPrBM, 2500);
+        setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
         document.getElementById('moveButtonTwo').textContent="Scald";
         document.getElementById('moveButtonThree').textContent="Moonblast";
@@ -189,6 +201,9 @@ function ubOne(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        $('#crabBattleMessage').html("Go! Crabominable!");
+        setTimeout(showCrBM, 2500);
+        setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
         document.getElementById('moveButtonTwo').textContent="Ice Hammer";
         document.getElementById('moveButtonThree').textContent="Close Combat";
@@ -196,6 +211,9 @@ function ubOne(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        $('#oranBattleMessage').html("Go! Oranguru!");
+        setTimeout(showOrBM, 2500);
+        setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
         document.getElementById('moveButtonTwo').textContent="Psychic";
         document.getElementById('moveButtonThree').textContent="Focus Blast";
@@ -203,6 +221,9 @@ function ubOne(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        setTimeout(showViBM, 2500);
+        setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
         document.getElementById('moveButtonTwo').textContent="Thunderbolt";
         document.getElementById('moveButtonThree').textContent="Bug Buzz";
@@ -213,10 +234,16 @@ function ubOne(){
 function ubTwo(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showMoveButtons, 3500);
     setTimeout(showBuzzwole, 500);
+    setTimeout(showMoveButtons, 4500);
+    $('#buzzBattleMessage').html("Buzzwole appeared!");
+    setTimeout(showBuBM, 500);
+    setTimeout(hideBuBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        $('#deciBattleMessage').html("Go! Decidueye!");
+        setTimeout(showDeBM, 2500);
+        setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
         document.getElementById('moveButtonThree').textContent="Leaf Blade";
@@ -224,6 +251,9 @@ function ubTwo(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        $('#inciBattleMessage').html("Go! Incineroar!");
+        setTimeout(showInBM, 2500);
+        setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Flare Blitz";
         document.getElementById('moveButtonThree').textContent="Darkest Lariat";
@@ -231,6 +261,9 @@ function ubTwo(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        $('#primBattleMessage').html("Go! Primarina!");
+        setTimeout(showPrBM, 2500);
+        setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
         document.getElementById('moveButtonTwo').textContent="Scald";
         document.getElementById('moveButtonThree').textContent="Moonblast";
@@ -238,6 +271,9 @@ function ubTwo(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        $('#crabBattleMessage').html("Go! Crabominable!");
+        setTimeout(showCrBM, 2500);
+        setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
         document.getElementById('moveButtonTwo').textContent="Ice Hammer";
         document.getElementById('moveButtonThree').textContent="Close Combat";
@@ -245,6 +281,9 @@ function ubTwo(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        $('#oranBattleMessage').html("Go! Oranguru!");
+        setTimeout(showOrBM, 2500);
+        setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
         document.getElementById('moveButtonTwo').textContent="Psychic";
         document.getElementById('moveButtonThree').textContent="Focus Blast";
@@ -252,6 +291,9 @@ function ubTwo(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        setTimeout(showViBM, 2500);
+        setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
         document.getElementById('moveButtonTwo').textContent="Thunderbolt";
         document.getElementById('moveButtonThree').textContent="Bug Buzz";
@@ -262,10 +304,16 @@ function ubTwo(){
 function ubThree(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showMoveButtons, 3500);
+    setTimeout(showMoveButtons, 4500);
     setTimeout(showPheromosa, 500);
+    $('#pherBattleMessage').html("Pheromosa appeared!");
+    setTimeout(showPhBM, 500);
+    setTimeout(hidePhBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        $('#deciBattleMessage').html("Go! Decidueye!");
+        setTimeout(showDeBM, 2500);
+        setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
         document.getElementById('moveButtonThree').textContent="Leaf Blade";
@@ -273,6 +321,9 @@ function ubThree(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        $('#inciBattleMessage').html("Go! Incineroar!");
+        setTimeout(showInBM, 2500);
+        setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Flare Blitz";
         document.getElementById('moveButtonThree').textContent="Darkest Lariat";
@@ -280,6 +331,9 @@ function ubThree(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        $('#primBattleMessage').html("Go! Primarina!");
+        setTimeout(showPrBM, 2500);
+        setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
         document.getElementById('moveButtonTwo').textContent="Scald";
         document.getElementById('moveButtonThree').textContent="Moonblast";
@@ -287,6 +341,9 @@ function ubThree(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        $('#crabBattleMessage').html("Go! Crabominable!");
+        setTimeout(showCrBM, 2500);
+        setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
         document.getElementById('moveButtonTwo').textContent="Ice Hammer";
         document.getElementById('moveButtonThree').textContent="Close Combat";
@@ -294,6 +351,9 @@ function ubThree(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        $('#oranBattleMessage').html("Go! Oranguru!");
+        setTimeout(showOrBM, 2500);
+        setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
         document.getElementById('moveButtonTwo').textContent="Psychic";
         document.getElementById('moveButtonThree').textContent="Focus Blast";
@@ -301,6 +361,9 @@ function ubThree(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        setTimeout(showViBM, 2500);
+        setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
         document.getElementById('moveButtonTwo').textContent="Thunderbolt";
         document.getElementById('moveButtonThree').textContent="Bug Buzz";
@@ -311,10 +374,16 @@ function ubThree(){
 function ubFour(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showMoveButtons, 3500);
+    setTimeout(showMoveButtons, 4500);
     setTimeout(showXurkitree, 500);
+    $('#xurkBattleMessage').html("Xurkitree appeared!");
+    setTimeout(showXuBM, 500);
+    setTimeout(hideXuBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        $('#deciBattleMessage').html("Go! Decidueye!");
+        setTimeout(showDeBM, 2500);
+        setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
         document.getElementById('moveButtonThree').textContent="Leaf Blade";
@@ -322,6 +391,9 @@ function ubFour(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        $('#inciBattleMessage').html("Go! Incineroar!");
+        setTimeout(showInBM, 2500);
+        setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Flare Blitz";
         document.getElementById('moveButtonThree').textContent="Darkest Lariat";
@@ -329,6 +401,9 @@ function ubFour(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        $('#primBattleMessage').html("Go! Primarina!");
+        setTimeout(showPrBM, 2500);
+        setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
         document.getElementById('moveButtonTwo').textContent="Scald";
         document.getElementById('moveButtonThree').textContent="Moonblast";
@@ -336,6 +411,9 @@ function ubFour(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        $('#crabBattleMessage').html("Go! Crabominable!");
+        setTimeout(showCrBM, 2500);
+        setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
         document.getElementById('moveButtonTwo').textContent="Ice Hammer";
         document.getElementById('moveButtonThree').textContent="Close Combat";
@@ -343,6 +421,9 @@ function ubFour(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        $('#oranBattleMessage').html("Go! Oranguru!");
+        setTimeout(showOrBM, 2500);
+        setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
         document.getElementById('moveButtonTwo').textContent="Psychic";
         document.getElementById('moveButtonThree').textContent="Focus Blast";
@@ -350,6 +431,9 @@ function ubFour(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        setTimeout(showViBM, 2500);
+        setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
         document.getElementById('moveButtonTwo').textContent="Thunderbolt";
         document.getElementById('moveButtonThree').textContent="Bug Buzz";
@@ -360,10 +444,16 @@ function ubFour(){
 function ubFive(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showMoveButtons, 3500);
+    setTimeout(showMoveButtons, 4500);
     setTimeout(showKartana, 500);
+    $('#kartBattleMessage').html("Kartana appeared!");
+    setTimeout(showKaBM, 500);
+    setTimeout(hideKaBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        $('#deciBattleMessage').html("Go! Decidueye!");
+        setTimeout(showDeBM, 2500);
+        setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
         document.getElementById('moveButtonThree').textContent="Leaf Blade";
@@ -371,6 +461,9 @@ function ubFive(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        $('#inciBattleMessage').html("Go! Incineroar!");
+        setTimeout(showInBM, 2500);
+        setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Flare Blitz";
         document.getElementById('moveButtonThree').textContent="Darkest Lariat";
@@ -378,6 +471,9 @@ function ubFive(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        $('#primBattleMessage').html("Go! Primarina!");
+        setTimeout(showPrBM, 2500);
+        setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
         document.getElementById('moveButtonTwo').textContent="Scald";
         document.getElementById('moveButtonThree').textContent="Moonblast";
@@ -385,6 +481,9 @@ function ubFive(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        $('#crabBattleMessage').html("Go! Crabominable!");
+        setTimeout(showCrBM, 2500);
+        setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
         document.getElementById('moveButtonTwo').textContent="Ice Hammer";
         document.getElementById('moveButtonThree').textContent="Close Combat";
@@ -392,6 +491,9 @@ function ubFive(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        $('#oranBattleMessage').html("Go! Oranguru!");
+        setTimeout(showOrBM, 2500);
+        setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
         document.getElementById('moveButtonTwo').textContent="Psychic";
         document.getElementById('moveButtonThree').textContent="Focus Blast";
@@ -399,6 +501,9 @@ function ubFive(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        setTimeout(showViBM, 2500);
+        setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
         document.getElementById('moveButtonTwo').textContent="Thunderbolt";
         document.getElementById('moveButtonThree').textContent="Bug Buzz";
@@ -409,10 +514,16 @@ function ubFive(){
 function ubSix(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showMoveButtons, 3500);
+    setTimeout(showMoveButtons, 4500);
     setTimeout(showCelesteela, 500);
+    $('#celeBattleMessage').html("Celesteela appeared!");
+    setTimeout(showCeBM, 500);
+    setTimeout(hideCeBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        $('#deciBattleMessage').html("Go! Decidueye!");
+        setTimeout(showDeBM, 2500);
+        setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
         document.getElementById('moveButtonThree').textContent="Leaf Blade";
@@ -420,6 +531,9 @@ function ubSix(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        $('#inciBattleMessage').html("Go! Incineroar!");
+        setTimeout(showInBM, 2500);
+        setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Flare Blitz";
         document.getElementById('moveButtonThree').textContent="Darkest Lariat";
@@ -427,6 +541,9 @@ function ubSix(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        $('#primBattleMessage').html("Go! Primarina!");
+        setTimeout(showPrBM, 2500);
+        setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
         document.getElementById('moveButtonTwo').textContent="Scald";
         document.getElementById('moveButtonThree').textContent="Moonblast";
@@ -434,6 +551,9 @@ function ubSix(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        $('#crabBattleMessage').html("Go! Crabominable!");
+        setTimeout(showCrBM, 2500);
+        setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
         document.getElementById('moveButtonTwo').textContent="Ice Hammer";
         document.getElementById('moveButtonThree').textContent="Close Combat";
@@ -441,6 +561,9 @@ function ubSix(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        $('#oranBattleMessage').html("Go! Oranguru!");
+        setTimeout(showOrBM, 2500);
+        setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
         document.getElementById('moveButtonTwo').textContent="Psychic";
         document.getElementById('moveButtonThree').textContent="Focus Blast";
@@ -448,6 +571,9 @@ function ubSix(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        setTimeout(showViBM, 2500);
+        setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
         document.getElementById('moveButtonTwo').textContent="Thunderbolt";
         document.getElementById('moveButtonThree').textContent="Bug Buzz";
@@ -458,10 +584,16 @@ function ubSix(){
 function ubSeven(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showMoveButtons, 3500);
+    setTimeout(showMoveButtons, 4500);
     setTimeout(showGuzzlord, 500);
+    $('#guzzBattleMessage').html("Guzzlord appeared!");
+    setTimeout(showGuBM, 500);
+    setTimeout(hideGuBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
+        $('#deciBattleMessage').html("Go! Decidueye!");
+        setTimeout(showDeBM, 2500);
+        setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
         document.getElementById('moveButtonThree').textContent="Leaf Blade";
@@ -469,6 +601,9 @@ function ubSeven(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
+        $('#inciBattleMessage').html("Go! Incineroar!");
+        setTimeout(showInBM, 2500);
+        setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
         document.getElementById('moveButtonTwo').textContent="Flare Blitz";
         document.getElementById('moveButtonThree').textContent="Darkest Lariat";
@@ -476,6 +611,9 @@ function ubSeven(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
+        $('#primBattleMessage').html("Go! Primarina!");
+        setTimeout(showPrBM, 2500);
+        setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
         document.getElementById('moveButtonTwo').textContent="Scald";
         document.getElementById('moveButtonThree').textContent="Moonblast";
@@ -483,6 +621,9 @@ function ubSeven(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
+        $('#crabBattleMessage').html("Go! Crabominable!");
+        setTimeout(showCrBM, 2500);
+        setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
         document.getElementById('moveButtonTwo').textContent="Ice Hammer";
         document.getElementById('moveButtonThree').textContent="Close Combat";
@@ -490,6 +631,9 @@ function ubSeven(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
+        $('#oranBattleMessage').html("Go! Oranguru!");
+        setTimeout(showOrBM, 2500);
+        setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
         document.getElementById('moveButtonTwo').textContent="Psychic";
         document.getElementById('moveButtonThree').textContent="Focus Blast";
@@ -497,6 +641,9 @@ function ubSeven(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
+        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        setTimeout(showViBM, 2500);
+        setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
         document.getElementById('moveButtonTwo').textContent="Thunderbolt";
         document.getElementById('moveButtonThree').textContent="Bug Buzz";
@@ -568,6 +715,110 @@ function showGuzzlord(){
     $('#guzzlordBattleOutput').show();
 }
 
+function showDeBM(){
+    $('#deciBattleMessage').show();
+}
+
+function showInBM(){
+    $('#inciBattleMessage').show();
+}
+
+function showPrBM(){
+    $('#primBattleMessage').show();
+}
+
+function showCrBM(){
+    $('#crabBattleMessage').show();
+}
+
+function showOrBM(){
+    $('#oranBattleMessage').show();
+}
+
+function showViBM(){
+    $('#vikaBattleMessage').show();
+}
+
+function showNiBM(){
+    $('#nihiBattleMessage').show();
+}
+
+function showBuBM(){
+    $('#buzzBattleMessage').show();
+}
+
+function showPhBM(){
+    $('#pherBattleMessage').show();
+}
+
+function showXuBM(){
+    $('#xurkBattleMessage').show();
+}
+
+function showKaBM(){
+    $('#kartBattleMessage').show();
+}
+
+function showCeBM(){
+    $('#celeBattleMessage').show();
+}
+
+function showGuBM(){
+    $('#guzzBattleMessage').show();
+}
+
+function hideDeBM(){
+    $('#deciBattleMessage').hide();
+}
+
+function hideInBM(){
+    $('#inciBattleMessage').hide();
+}
+
+function hidePrBM(){
+    $('#primBattleMessage').hide();
+}
+
+function hideCrBM(){
+    $('#crabBattleMessage').hide();
+}
+
+function hideOrBM(){
+    $('#oranBattleMessage').hide();
+}
+
+function hideViBM(){
+    $('#vikaBattleMessage').hide();
+}
+
+function hideNiBM(){
+    $('#nihiBattleMessage').hide();
+}
+
+function hideBuBM(){
+    $('#buzzBattleMessage').hide();
+}
+
+function hidePhBM(){
+    $('#pherBattleMessage').hide();
+}
+
+function hideXuBM(){
+    $('#xurkBattleMessage').hide();
+}
+
+function hideKaBM(){
+    $('#kartBattleMessage').hide();
+}
+
+function hideCeBM(){
+    $('#celeBattleMessage').hide();
+}
+
+function hideGuBM(){
+    $('#guzzBattleMessage').hide();
+}
+
 $(document).ready(function(){
     $('#openingMessage').hide();
     $('#teamMessage').hide();
@@ -602,6 +853,19 @@ $(document).ready(function(){
     $('#kartanaBattleOutput').hide();
     $('#celesteelaBattleOutput').hide();
     $('#guzzlordBattleOutput').hide();
+
+    $('#deciBattleMessage').hide();
+    $('#inciBattleMessage').hide();
+    $('#primBattleMessage').hide();
+    $('#crabBattleMessage').hide();
+    $('#oranBattleMessage').hide();
+    $('#nihiBattleMessage').hide();
+    $('#buzzBattleMessage').hide();
+    $('#pherBattleMessage').hide();
+    $('#xurkBattleMessage').hide();
+    $('#kartBattleMessage').hide();
+    $('#celeBattleMessage').hide();
+    $('#guzzBattleMessage').hide();
 
     $('#chooseTeam').hide();
     $('#confirmTeam').hide();

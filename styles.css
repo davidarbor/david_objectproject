@@ -113,13 +113,85 @@ body {
     left: 60%;
 }
 
-#battleMessage{
-    font: bold 60px cambria, serif;
-    text-align: center;
+#deciBattleMessage{
+    font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
-    left: 32%;
+    left: 30%;
 }
+#inciBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#primBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#crabBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#oranBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#vikaBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#nihiBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#buzzBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#pherBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#xurkBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#kartBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#celeBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#guzzBattleMessage{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
 
 #chooseTeam{
     position: absolute;
