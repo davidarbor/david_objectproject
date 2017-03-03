@@ -166,12 +166,12 @@ function ubOne(){
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
     setTimeout(showNihilego, 500);
-    $('#nihiBattleMessage').html("Nihilego appeared!");
+    $('#nihiStartBattle').html("Nihilego appeared!");
     setTimeout(showNiBM, 500);
     setTimeout(hideNiBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
-        $('#deciBattleMessage').html("Go! Decidueye!");
+        $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -181,7 +181,7 @@ function ubOne(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
-        $('#inciBattleMessage').html("Go! Incineroar!");
+        $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -191,7 +191,7 @@ function ubOne(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
-        $('#primBattleMessage').html("Go! Primarina!");
+        $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
@@ -201,7 +201,7 @@ function ubOne(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
-        $('#crabBattleMessage').html("Go! Crabominable!");
+        $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
@@ -211,7 +211,7 @@ function ubOne(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
-        $('#oranBattleMessage').html("Go! Oranguru!");
+        $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
@@ -221,7 +221,7 @@ function ubOne(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
-        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
@@ -236,12 +236,12 @@ function ubTwo(){
     $('#changeFirstPartyMember').hide();
     setTimeout(showBuzzwole, 500);
     setTimeout(showMoveButtons, 4500);
-    $('#buzzBattleMessage').html("Buzzwole appeared!");
+    $('#buzzStartBattle').html("Buzzwole appeared!");
     setTimeout(showBuBM, 500);
     setTimeout(hideBuBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
-        $('#deciBattleMessage').html("Go! Decidueye!");
+        $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -251,7 +251,7 @@ function ubTwo(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
-        $('#inciBattleMessage').html("Go! Incineroar!");
+        $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -261,7 +261,7 @@ function ubTwo(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
-        $('#primBattleMessage').html("Go! Primarina!");
+        $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
@@ -271,7 +271,7 @@ function ubTwo(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
-        $('#crabBattleMessage').html("Go! Crabominable!");
+        $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
@@ -281,7 +281,7 @@ function ubTwo(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
-        $('#oranBattleMessage').html("Go! Oranguru!");
+        $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
@@ -291,7 +291,7 @@ function ubTwo(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
-        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
@@ -306,12 +306,12 @@ function ubThree(){
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
     setTimeout(showPheromosa, 500);
-    $('#pherBattleMessage').html("Pheromosa appeared!");
+    $('#pherStartBattle').html("Pheromosa appeared!");
     setTimeout(showPhBM, 500);
     setTimeout(hidePhBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
-        $('#deciBattleMessage').html("Go! Decidueye!");
+        $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -321,7 +321,7 @@ function ubThree(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
-        $('#inciBattleMessage').html("Go! Incineroar!");
+        $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -331,7 +331,7 @@ function ubThree(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
-        $('#primBattleMessage').html("Go! Primarina!");
+        $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
@@ -341,7 +341,7 @@ function ubThree(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
-        $('#crabBattleMessage').html("Go! Crabominable!");
+        $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
@@ -351,7 +351,7 @@ function ubThree(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
-        $('#oranBattleMessage').html("Go! Oranguru!");
+        $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
@@ -361,7 +361,7 @@ function ubThree(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
-        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
@@ -376,12 +376,12 @@ function ubFour(){
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
     setTimeout(showXurkitree, 500);
-    $('#xurkBattleMessage').html("Xurkitree appeared!");
+    $('#xurkStartBattle').html("Xurkitree appeared!");
     setTimeout(showXuBM, 500);
     setTimeout(hideXuBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
-        $('#deciBattleMessage').html("Go! Decidueye!");
+        $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -391,7 +391,7 @@ function ubFour(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
-        $('#inciBattleMessage').html("Go! Incineroar!");
+        $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -401,7 +401,7 @@ function ubFour(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
-        $('#primBattleMessage').html("Go! Primarina!");
+        $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
@@ -411,7 +411,7 @@ function ubFour(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
-        $('#crabBattleMessage').html("Go! Crabominable!");
+        $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
@@ -421,7 +421,7 @@ function ubFour(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
-        $('#oranBattleMessage').html("Go! Oranguru!");
+        $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
@@ -431,7 +431,7 @@ function ubFour(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
-        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
@@ -446,12 +446,12 @@ function ubFive(){
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
     setTimeout(showKartana, 500);
-    $('#kartBattleMessage').html("Kartana appeared!");
+    $('#kartStartBattle').html("Kartana appeared!");
     setTimeout(showKaBM, 500);
     setTimeout(hideKaBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
-        $('#deciBattleMessage').html("Go! Decidueye!");
+        $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -461,7 +461,7 @@ function ubFive(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
-        $('#inciBattleMessage').html("Go! Incineroar!");
+        $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -471,7 +471,7 @@ function ubFive(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
-        $('#primBattleMessage').html("Go! Primarina!");
+        $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
@@ -481,7 +481,7 @@ function ubFive(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
-        $('#crabBattleMessage').html("Go! Crabominable!");
+        $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
@@ -491,7 +491,7 @@ function ubFive(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
-        $('#oranBattleMessage').html("Go! Oranguru!");
+        $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
@@ -501,7 +501,7 @@ function ubFive(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
-        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
@@ -516,12 +516,12 @@ function ubSix(){
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
     setTimeout(showCelesteela, 500);
-    $('#celeBattleMessage').html("Celesteela appeared!");
+    $('#celeStartBattle').html("Celesteela appeared!");
     setTimeout(showCeBM, 500);
     setTimeout(hideCeBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
-        $('#deciBattleMessage').html("Go! Decidueye!");
+        $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -531,7 +531,7 @@ function ubSix(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
-        $('#inciBattleMessage').html("Go! Incineroar!");
+        $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -541,7 +541,7 @@ function ubSix(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
-        $('#primBattleMessage').html("Go! Primarina!");
+        $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
@@ -551,7 +551,7 @@ function ubSix(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
-        $('#crabBattleMessage').html("Go! Crabominable!");
+        $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
@@ -561,7 +561,7 @@ function ubSix(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
-        $('#oranBattleMessage').html("Go! Oranguru!");
+        $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
@@ -571,7 +571,7 @@ function ubSix(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
-        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
@@ -586,12 +586,12 @@ function ubSeven(){
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
     setTimeout(showGuzzlord, 500);
-    $('#guzzBattleMessage').html("Guzzlord appeared!");
+    $('#guzzStartBattle').html("Guzzlord appeared!");
     setTimeout(showGuBM, 500);
     setTimeout(hideGuBM, 1500);
     if(user.party[0]==decidueye){
         setTimeout(showDecidueye, 2500);
-        $('#deciBattleMessage').html("Go! Decidueye!");
+        $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -601,7 +601,7 @@ function ubSeven(){
     }
     if(user.party[0]==incineroar){
         setTimeout(showIncineroar, 2500);
-        $('#inciBattleMessage').html("Go! Incineroar!");
+        $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
         document.getElementById('moveButtonOne').textContent="Swords Dance";
@@ -611,7 +611,7 @@ function ubSeven(){
     }
     if(user.party[0]==primarina){
         setTimeout(showPrimarina, 2500);
-        $('#primBattleMessage').html("Go! Primarina!");
+        $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Work Up";
@@ -621,7 +621,7 @@ function ubSeven(){
     }
     if(user.party[0]==crabominable){
         setTimeout(showCrabominable, 2500);
-        $('#crabBattleMessage').html("Go! Crabominable!");
+        $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Power-Up Punch";
@@ -631,7 +631,7 @@ function ubSeven(){
     }
     if(user.party[0]==oranguru){
         setTimeout(showOranguru, 2500);
-        $('#oranBattleMessage').html("Go! Oranguru!");
+        $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
         document.getElementById('moveButtonOne').textContent="Nasty Plot";
@@ -641,7 +641,7 @@ function ubSeven(){
     }
     if(user.party[0]==vikavolt){
         setTimeout(showVikavolt, 2500);
-        $('#vikaBattleMessage').html("Go! Vikavolt!");
+        $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
         document.getElementById('moveButtonOne').textContent="Agility";
@@ -716,107 +716,107 @@ function showGuzzlord(){
 }
 
 function showDeBM(){
-    $('#deciBattleMessage').show();
+    $('#deciStartBattle').show();
 }
 
 function showInBM(){
-    $('#inciBattleMessage').show();
+    $('#inciStartBattle').show();
 }
 
 function showPrBM(){
-    $('#primBattleMessage').show();
+    $('#primStartBattle').show();
 }
 
 function showCrBM(){
-    $('#crabBattleMessage').show();
+    $('#crabStartBattle').show();
 }
 
 function showOrBM(){
-    $('#oranBattleMessage').show();
+    $('#oranStartBattle').show();
 }
 
 function showViBM(){
-    $('#vikaBattleMessage').show();
+    $('#vikaStartBattle').show();
 }
 
 function showNiBM(){
-    $('#nihiBattleMessage').show();
+    $('#nihiStartBattle').show();
 }
 
 function showBuBM(){
-    $('#buzzBattleMessage').show();
+    $('#buzzStartBattle').show();
 }
 
 function showPhBM(){
-    $('#pherBattleMessage').show();
+    $('#pherStartBattle').show();
 }
 
 function showXuBM(){
-    $('#xurkBattleMessage').show();
+    $('#xurkStartBattle').show();
 }
 
 function showKaBM(){
-    $('#kartBattleMessage').show();
+    $('#kartStartBattle').show();
 }
 
 function showCeBM(){
-    $('#celeBattleMessage').show();
+    $('#celeStartBattle').show();
 }
 
 function showGuBM(){
-    $('#guzzBattleMessage').show();
+    $('#guzzStartBattle').show();
 }
 
 function hideDeBM(){
-    $('#deciBattleMessage').hide();
+    $('#deciStartBattle').hide();
 }
 
 function hideInBM(){
-    $('#inciBattleMessage').hide();
+    $('#inciStartBattle').hide();
 }
 
 function hidePrBM(){
-    $('#primBattleMessage').hide();
+    $('#primStartBattle').hide();
 }
 
 function hideCrBM(){
-    $('#crabBattleMessage').hide();
+    $('#crabStartBattle').hide();
 }
 
 function hideOrBM(){
-    $('#oranBattleMessage').hide();
+    $('#oranStartBattle').hide();
 }
 
 function hideViBM(){
-    $('#vikaBattleMessage').hide();
+    $('#vikaStartBattle').hide();
 }
 
 function hideNiBM(){
-    $('#nihiBattleMessage').hide();
+    $('#nihiStartBattle').hide();
 }
 
 function hideBuBM(){
-    $('#buzzBattleMessage').hide();
+    $('#buzzStartBattle').hide();
 }
 
 function hidePhBM(){
-    $('#pherBattleMessage').hide();
+    $('#pherStartBattle').hide();
 }
 
 function hideXuBM(){
-    $('#xurkBattleMessage').hide();
+    $('#xurkStartBattle').hide();
 }
 
 function hideKaBM(){
-    $('#kartBattleMessage').hide();
+    $('#kartStartBattle').hide();
 }
 
 function hideCeBM(){
-    $('#celeBattleMessage').hide();
+    $('#celeStartBattle').hide();
 }
 
 function hideGuBM(){
-    $('#guzzBattleMessage').hide();
+    $('#guzzStartBattle').hide();
 }
 
 $(document).ready(function(){
@@ -854,18 +854,19 @@ $(document).ready(function(){
     $('#celesteelaBattleOutput').hide();
     $('#guzzlordBattleOutput').hide();
 
-    $('#deciBattleMessage').hide();
-    $('#inciBattleMessage').hide();
-    $('#primBattleMessage').hide();
-    $('#crabBattleMessage').hide();
-    $('#oranBattleMessage').hide();
-    $('#nihiBattleMessage').hide();
-    $('#buzzBattleMessage').hide();
-    $('#pherBattleMessage').hide();
-    $('#xurkBattleMessage').hide();
-    $('#kartBattleMessage').hide();
-    $('#celeBattleMessage').hide();
-    $('#guzzBattleMessage').hide();
+    $('#deciStartBattle').hide();
+    $('#inciStartBattle').hide();
+    $('#primStartBattle').hide();
+    $('#crabStartBattle').hide();
+    $('#oranStartBattle').hide();
+    $('#vikaStartBattle').hide();
+    $('#nihiStartBattle').hide();
+    $('#buzzStartBattle').hide();
+    $('#pherStartBattle').hide();
+    $('#xurkStartBattle').hide();
+    $('#kartStartBattle').hide();
+    $('#celeStartBattle').hide();
+    $('#guzzStartBattle').hide();
 
     $('#chooseTeam').hide();
     $('#confirmTeam').hide();

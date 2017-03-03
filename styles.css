@@ -113,83 +113,83 @@ body {
     left: 60%;
 }
 
-#deciBattleMessage{
+#deciStartBattle{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 32%;
+}
+#inciStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
     left: 30%;
 }
-#inciBattleMessage{
+#primStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
     left: 30%;
 }
-#primBattleMessage{
+#crabStartBattle{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 27%;
+}
+#oranStartBattle{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 32%;
+}
+#vikaStartBattle{
+    font: bold 75px cambria, sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 34%;
+}
+#nihiStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
     left: 30%;
 }
-#crabBattleMessage{
+#buzzStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
-    left: 30%;
+    left: 27%;
 }
-#oranBattleMessage{
+#pherStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
-    left: 30%;
+    left: 25%;
 }
-#vikaBattleMessage{
+#xurkStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
-    left: 30%;
+    left: 28%;
 }
-#nihiBattleMessage{
+#kartStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
-    left: 30%;
+    left: 29%;
 }
-#buzzBattleMessage{
+#celeStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
-    left: 30%;
+    left: 26%;
 }
-#pherBattleMessage{
+#guzzStartBattle{
     font: bold 75px cambria, sans-serif;
     position: absolute;
     top: 80%;
-    left: 30%;
-}
-#xurkBattleMessage{
-    font: bold 75px cambria, sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 30%;
-}
-#kartBattleMessage{
-    font: bold 75px cambria, sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 30%;
-}
-#celeBattleMessage{
-    font: bold 75px cambria, sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 30%;
-}
-#guzzBattleMessage{
-    font: bold 75px cambria, sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 30%;
+    left: 26%;
 }
 
 
@@ -259,6 +259,8 @@ body {
     position: absolute;
     top: 80%;
     left: 5%;
+    background-color: red;
+    border-color: darkred;
 }
 
 
