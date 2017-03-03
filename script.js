@@ -43,6 +43,15 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $('#decidueyeIcon').html("<img width='75' height='75' src='" + decidueye.icon + "'>");
+    $('#incineroarIcon').html("<img width='75' height='75' src='" + incineroar.icon + "'>");
+    $('#primarinaIcon').html("<img width='75' height='75' src='" + primarina.icon + "'>");
+    $('#crabominableIcon').html("<img width='75' height='75' src='" + crabominable.icon + "'>");
+    $('#oranguruIcon').html("<img width='75' height='75' src='" + oranguru.icon + "'>");
+    $('#vikavoltIcon').html("<img width='75' height='75' src='" + vikavolt.icon + "'>");
+});
+
+$(document).ready(function(){
     $('#decidueyeBattleOutput').html("<img width='200' height='160' src='" + decidueye.battleImage + "'>");
     $('#incineroarBattleOutput').html("<img width='200' height='200' src='" + incineroar.battleImage + "'>");
     $('#primarinaBattleOutput').html("<img width='200' height='200' src='" + primarina.battleImage + "'>");
@@ -77,14 +86,58 @@ function confirmTeam(){
         $('#crabominableSelectOutput').hide();
         $('#oranguruSelectOutput').hide();
         $('#vikavoltSelectOutput').hide();
+        setTimeout(showCurrentPartyDiv, 510);
         for(i=0; i<user.party.length; i++){
             console.log(user.party[i].currenthp);
+        }
+        for(i=0; i<user.party.length; i++){
+            if(user.party[i]==decidueye){
+                setTimeout(showDeciIcon, 510);
+            }
+            if(user.party[i]==incineroar){
+                setTimeout(showInciIcon, 510);
+            }
+            if(user.party[i]==primarina){
+                setTimeout(showPrimIcon, 510);
+            }
+            if(user.party[i]==crabominable){
+                setTimeout(showCrabIcon, 510);
+            }
+            if(user.party[i]==oranguru){
+                setTimeout(showOranIcon, 510);
+            }
+            if(user.party[i]==vikavolt){
+                setTimeout(showVikaIcon, 510);
+            }
         }
         console.log("Current party: "+user.party[0].name+", "+user.party[1].name+", "+user.party[2].name);
     }
     else{
         user.party=[];
     }
+}
+
+function showCurrentPartyDiv(){
+    $('#currentParty').show();
+}
+
+function showDeciIcon(){
+    $('#decidueyeIcon').show();
+}
+function showInciIcon(){
+    $('#incineroarIcon').show();
+}
+function showPrimIcon(){
+    $('#primarinaIcon').show();
+}
+function showCrabIcon(){
+    $('#crabominableIcon').show();
+}
+function showOranIcon(){
+    $('#oranguruIcon').show();
+}
+function showVikaIcon(){
+    $('#vikavoltIcon').show();
 }
 
 function changeFirstPartyMember(){
@@ -824,6 +877,7 @@ $(document).ready(function(){
     $('#teamMessage').hide();
     $('#fightTable').hide();
     $('#backToHub').hide();
+    $('#currentParty').hide();
 
     $('#chooseDecidueye').hide();
     $('#chooseIncineroar').hide();
@@ -838,6 +892,13 @@ $(document).ready(function(){
     $('#crabominableSelectOutput').hide();
     $('#oranguruSelectOutput').hide();
     $('#vikavoltSelectOutput').hide();
+
+    $('#decidueyeIcon').hide();
+    $('#incineroarIcon').hide();
+    $('#primarinaIcon').hide();
+    $('#crabominableIcon').hide();
+    $('#oranguruIcon').hide();
+    $('#vikavoltIcon').hide();
 
     $('#decidueyeBattleOutput').hide();
     $('#incineroarBattleOutput').hide();

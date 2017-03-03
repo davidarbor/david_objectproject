@@ -45,6 +45,36 @@ body {
     left: 75%;
 }
 
+#decidueyeIcon{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+}
+#incineroarIcon{
+    position: absolute;
+    top: 7%;
+    left: 10%;
+}
+#primarinaIcon{
+    position: absolute;
+    top: 7%;
+    left: 15%;
+}
+#crabominableIcon{
+    position: absolute;
+    top: 7%;
+    left: 20%;
+}
+#oranguruIcon{
+    position: absolute;
+    top: 7%;
+    left: 25%;
+}
+#vikavoltIcon{
+    position: absolute;
+    top: 7%;
+    left: 30%;
+}
 
 #decidueyeBattleOutput{
     position: absolute;
@@ -271,6 +301,11 @@ body {
 #teamMessage{
     font: bold 60px cambria, serif;
     text-align: center;
+}
+#currentParty{
+    font: bold 40px cambria, serif;
+    position: absolute;
+    left: 15%;
 }
 
 
