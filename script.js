@@ -714,6 +714,7 @@ function showMoveButtons(){
 function backToHub(){
     $('#fightTable').show();
     $('#backToHub').hide();
+    $('#changeFirstPartyMember').show();
 }
 
 function showDecidueye(){
