@@ -83,6 +83,7 @@ var closeCombat=new Move("Close Combat", "Fighting", "Physical", 120, 100, 0);
 var nastyPlot=new Move("Nasty Plot", "Dark", "Status", 0, 0, 0);
 var focusBlast=new Move("Focus Blast", "Fighting", "Special", 120, 70, 0);
 var agility=new Move("Agility", "Psychic", "Status", 0, 0, 0);
+var bugBuzz=new Move("Bug Buzz", "Bug", "Special", 90, 100, 0);
 
 var sludgeWave=new Move("Sludge Wave", "Poison", "Special", 95, 100, 0);
 var powerGem=new Move("Power Gem", "Rock", "Special", 80, 100, 0);
@@ -93,7 +94,6 @@ var leechLife=new Move("Leech Life", "Bug", "Physical", 80, 100, 0);
 var superpower=new Move("Superpower", "Fighting", "Physical", 120, 100, 0);
 var stoneEdge=new Move("Stone Edge", "Rock", "Physical", 100, 80, 0);
 var highJumpKick=new Move("High Jump Kick", "Fighting", "Physical", 130, 90, 0);
-var bugBuzz=new Move("Bug Buzz", "Bug", "Special", 90, 100, 0);
 var iceBeam=new Move("Ice Beam", "Ice", "Special", 90, 100, 0);
 var poisonJab=new Move("Poison Jab", "Poison", "Physical", 80, 100, 0);
 var thunderbolt=new Move("Thunderbolt", "Electric", "Special", 90, 100, 0);
@@ -110,6 +110,7 @@ var crunch=new Move("Crunch", "Dark", "Physical", 80, 100, 0);
 var dragonTail=new Move("Dragon Tail", "Dragon", "Physical", 60, 90, -6);
 var fireBlast=new Move("Fire Blast", "Fire", "Special", 110, 85, 0);
 
+var activeMon=new Partner(this.name, this.type1, this.type2, this.maxhp, this.currenthp, this.attack, this.defense, this.specialAttack, this.specialDefense, this.speed, this.selectionImage, this.battleImage, this.icon);
 
 var decidueye=new Partner("Decidueye", "Grass", "Ghost", 298, 298, 313, 186, 212, 236, 262, "img/Decidueye.png", "img/decidueyeSprite.png", "img/decidueyeIcon.png");
 decidueye.addMove(swordsDance);

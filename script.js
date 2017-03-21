@@ -32,7 +32,6 @@ function chooseTeam(){
 }
 
 
-
 $(document).ready(function(){
     $('#decidueyeSelectOutput').html("<img width='180' height='180' src='" + decidueye.selectionImage + "'>");
     $('#incineroarSelectOutput').html("<img width='180' height='180'  src='" + incineroar.selectionImage + "'>");
@@ -198,7 +197,7 @@ function exitSwitch(){
 }
 
 function useMoveOne(){
-    var move1=user.party[0].moves[0].name;
+
 }
 
 function useMoveTwo(){
