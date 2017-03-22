@@ -197,23 +197,20 @@ function exitSwitch(){
 }
 
 function useMoveOne(){
-
+    console.log(activeMon.name+" used "+activeMon.moves[0].name+"!");
 }
-
 function useMoveTwo(){
-
+    console.log(activeMon.name+" used "+activeMon.moves[1].name+"!");
 }
-
 function useMoveThree(){
-
+    console.log(activeMon.name+" used "+activeMon.moves[2].name+"!");
 }
-
 function useMoveFour(){
-
+    console.log(activeMon.name+" used "+activeMon.moves[3].name+"!");
 }
-
 
 function ubOne(){
+    currentUB=nihilego;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
@@ -270,6 +267,7 @@ function ubOne(){
 }
 
 function ubTwo(){
+    currentUB=buzzwole;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showBuzzwole, 500);
@@ -340,6 +338,7 @@ function ubTwo(){
 }
 
 function ubThree(){
+    currentUB=pheromosa;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
@@ -410,6 +409,7 @@ function ubThree(){
 }
 
 function ubFour(){
+    currentUB=xurkitree;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
@@ -480,6 +480,7 @@ function ubFour(){
 }
 
 function ubFive(){
+    currentUB=kartana;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
@@ -550,6 +551,7 @@ function ubFive(){
 }
 
 function ubSix(){
+    currentUB=celesteela;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
@@ -620,6 +622,7 @@ function ubSix(){
 }
 
 function ubSeven(){
+    currentUB=guzzlord;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);

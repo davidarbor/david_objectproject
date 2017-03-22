@@ -111,6 +111,7 @@ var dragonTail=new Move("Dragon Tail", "Dragon", "Physical", 60, 90, -6);
 var fireBlast=new Move("Fire Blast", "Fire", "Special", 110, 85, 0);
 
 var activeMon=new Partner(this.name, this.type1, this.type2, this.maxhp, this.currenthp, this.attack, this.defense, this.specialAttack, this.specialDefense, this.speed, this.selectionImage, this.battleImage, this.icon);
+var currentUB=new Enemy(this.name, this.type1, this.type2, this.maxhp, this.currenthp, this.attack, this.defense, this.specialAttack, this.specialDefense, this.speed, this.battleImage);
 
 var decidueye=new Partner("Decidueye", "Grass", "Ghost", 298, 298, 313, 186, 212, 236, 262, "img/Decidueye.png", "img/decidueyeSprite.png", "img/decidueyeIcon.png");
 decidueye.addMove(swordsDance);
