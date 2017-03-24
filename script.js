@@ -196,19 +196,6 @@ function exitSwitch(){
     $('#exitSwitch').hide();
 }
 
-function useMoveOne(){
-    console.log(activeMon.name+" used "+activeMon.moves[0].name+"!");
-}
-function useMoveTwo(){
-    console.log(activeMon.name+" used "+activeMon.moves[1].name+"!");
-}
-function useMoveThree(){
-    console.log(activeMon.name+" used "+activeMon.moves[2].name+"!");
-}
-function useMoveFour(){
-    console.log(activeMon.name+" used "+activeMon.moves[3].name+"!");
-}
-
 function ubOne(){
     currentUB=nihilego;
     $('#fightTable').hide();
@@ -276,65 +263,51 @@ function ubTwo(){
     setTimeout(showBuBM, 500);
     setTimeout(hideBuBM, 1500);
     if(user.party[0]==decidueye){
+        activeMon=decidueye;
         setTimeout(showDecidueye, 2500);
         $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
-        document.getElementById('moveButtonThree').textContent="Leaf Blade";
-        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
+        activeMon=incineroar;
         setTimeout(showIncineroar, 2500);
         $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
-        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
+        activeMon=primarina;
         setTimeout(showPrimarina, 2500);
         $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Work Up";
-        document.getElementById('moveButtonTwo').textContent="Scald";
-        document.getElementById('moveButtonThree').textContent="Moonblast";
-        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
+        activeMon=crabominable;
         setTimeout(showCrabominable, 2500);
         $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
-        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
-        document.getElementById('moveButtonThree').textContent="Close Combat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
+        activeMon=oranguru;
         setTimeout(showOranguru, 2500);
         $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Nasty Plot";
-        document.getElementById('moveButtonTwo').textContent="Psychic";
-        document.getElementById('moveButtonThree').textContent="Focus Blast";
-        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
+        activeMon=vikavolt;
         setTimeout(showVikavolt, 2500);
         $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Agility";
-        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
-        document.getElementById('moveButtonThree').textContent="Bug Buzz";
-        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
+    document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
+    document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
+    document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
+    document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
 }
 
 function ubThree(){
@@ -347,65 +320,51 @@ function ubThree(){
     setTimeout(showPhBM, 500);
     setTimeout(hidePhBM, 1500);
     if(user.party[0]==decidueye){
+        activeMon=decidueye;
         setTimeout(showDecidueye, 2500);
         $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
-        document.getElementById('moveButtonThree').textContent="Leaf Blade";
-        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
+        activeMon=incineroar;
         setTimeout(showIncineroar, 2500);
         $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
-        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
+        activeMon=primarina;
         setTimeout(showPrimarina, 2500);
         $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Work Up";
-        document.getElementById('moveButtonTwo').textContent="Scald";
-        document.getElementById('moveButtonThree').textContent="Moonblast";
-        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
+        activeMon=crabominable;
         setTimeout(showCrabominable, 2500);
         $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
-        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
-        document.getElementById('moveButtonThree').textContent="Close Combat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
+        activeMon=oranguru;
         setTimeout(showOranguru, 2500);
         $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Nasty Plot";
-        document.getElementById('moveButtonTwo').textContent="Psychic";
-        document.getElementById('moveButtonThree').textContent="Focus Blast";
-        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
+        activeMon=vikavolt;
         setTimeout(showVikavolt, 2500);
         $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Agility";
-        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
-        document.getElementById('moveButtonThree').textContent="Bug Buzz";
-        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
+    document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
+    document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
+    document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
+    document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
 }
 
 function ubFour(){
@@ -418,65 +377,51 @@ function ubFour(){
     setTimeout(showXuBM, 500);
     setTimeout(hideXuBM, 1500);
     if(user.party[0]==decidueye){
+        activeMon=decidueye;
         setTimeout(showDecidueye, 2500);
         $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
-        document.getElementById('moveButtonThree').textContent="Leaf Blade";
-        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
+        activeMon=incineroar;
         setTimeout(showIncineroar, 2500);
         $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
-        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
+        activeMon=primarina;
         setTimeout(showPrimarina, 2500);
         $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Work Up";
-        document.getElementById('moveButtonTwo').textContent="Scald";
-        document.getElementById('moveButtonThree').textContent="Moonblast";
-        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
+        activeMon=crabominable;
         setTimeout(showCrabominable, 2500);
         $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
-        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
-        document.getElementById('moveButtonThree').textContent="Close Combat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
+        activeMon=oranguru;
         setTimeout(showOranguru, 2500);
         $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Nasty Plot";
-        document.getElementById('moveButtonTwo').textContent="Psychic";
-        document.getElementById('moveButtonThree').textContent="Focus Blast";
-        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
+        activeMon=vikavolt;
         setTimeout(showVikavolt, 2500);
         $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Agility";
-        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
-        document.getElementById('moveButtonThree').textContent="Bug Buzz";
-        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
+    document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
+    document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
+    document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
+    document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
 }
 
 function ubFive(){
@@ -489,65 +434,51 @@ function ubFive(){
     setTimeout(showKaBM, 500);
     setTimeout(hideKaBM, 1500);
     if(user.party[0]==decidueye){
+        activeMon=decidueye;
         setTimeout(showDecidueye, 2500);
         $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
-        document.getElementById('moveButtonThree').textContent="Leaf Blade";
-        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
+        activeMon=incineroar;
         setTimeout(showIncineroar, 2500);
         $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
-        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
+        activeMon=primarina;
         setTimeout(showPrimarina, 2500);
         $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Work Up";
-        document.getElementById('moveButtonTwo').textContent="Scald";
-        document.getElementById('moveButtonThree').textContent="Moonblast";
-        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
+        activeMon=crabominable;
         setTimeout(showCrabominable, 2500);
         $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
-        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
-        document.getElementById('moveButtonThree').textContent="Close Combat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
+        activeMon=oranguru;
         setTimeout(showOranguru, 2500);
         $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Nasty Plot";
-        document.getElementById('moveButtonTwo').textContent="Psychic";
-        document.getElementById('moveButtonThree').textContent="Focus Blast";
-        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
+        activeMon=vikavolt;
         setTimeout(showVikavolt, 2500);
         $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Agility";
-        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
-        document.getElementById('moveButtonThree').textContent="Bug Buzz";
-        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
+    document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
+    document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
+    document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
+    document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
 }
 
 function ubSix(){
@@ -560,65 +491,51 @@ function ubSix(){
     setTimeout(showCeBM, 500);
     setTimeout(hideCeBM, 1500);
     if(user.party[0]==decidueye){
+        activeMon=decidueye;
         setTimeout(showDecidueye, 2500);
         $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
-        document.getElementById('moveButtonThree').textContent="Leaf Blade";
-        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
+        activeMon=incineroar;
         setTimeout(showIncineroar, 2500);
         $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
-        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
+        activeMon=primarina;
         setTimeout(showPrimarina, 2500);
         $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Work Up";
-        document.getElementById('moveButtonTwo').textContent="Scald";
-        document.getElementById('moveButtonThree').textContent="Moonblast";
-        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
+        activeMon=crabominable;
         setTimeout(showCrabominable, 2500);
         $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
-        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
-        document.getElementById('moveButtonThree').textContent="Close Combat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
+        activeMon=oranguru;
         setTimeout(showOranguru, 2500);
         $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Nasty Plot";
-        document.getElementById('moveButtonTwo').textContent="Psychic";
-        document.getElementById('moveButtonThree').textContent="Focus Blast";
-        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
+        activeMon=vikavolt;
         setTimeout(showVikavolt, 2500);
         $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Agility";
-        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
-        document.getElementById('moveButtonThree').textContent="Bug Buzz";
-        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
+    document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
+    document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
+    document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
+    document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
 }
 
 function ubSeven(){
@@ -631,65 +548,64 @@ function ubSeven(){
     setTimeout(showGuBM, 500);
     setTimeout(hideGuBM, 1500);
     if(user.party[0]==decidueye){
+        activeMon=decidueye;
         setTimeout(showDecidueye, 2500);
         $('#deciStartBattle').html("Go! Decidueye!");
         setTimeout(showDeBM, 2500);
         setTimeout(hideDeBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Spirit Shackle";
-        document.getElementById('moveButtonThree').textContent="Leaf Blade";
-        document.getElementById('moveButtonFour').textContent="Sucker Punch";
     }
     if(user.party[0]==incineroar){
+        activeMon=incineroar;
         setTimeout(showIncineroar, 2500);
         $('#inciStartBattle').html("Go! Incineroar!");
         setTimeout(showInBM, 2500);
         setTimeout(hideInBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Swords Dance";
-        document.getElementById('moveButtonTwo').textContent="Flare Blitz";
-        document.getElementById('moveButtonThree').textContent="Darkest Lariat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==primarina){
+        activeMon=primarina;
         setTimeout(showPrimarina, 2500);
         $('#primStartBattle').html("Go! Primarina!");
         setTimeout(showPrBM, 2500);
         setTimeout(hidePrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Work Up";
-        document.getElementById('moveButtonTwo').textContent="Scald";
-        document.getElementById('moveButtonThree').textContent="Moonblast";
-        document.getElementById('moveButtonFour').textContent="Psychic";
     }
     if(user.party[0]==crabominable){
+        activeMon=crabominable;
         setTimeout(showCrabominable, 2500);
         $('#crabStartBattle').html("Go! Crabominable!");
         setTimeout(showCrBM, 2500);
         setTimeout(hideCrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Power-Up Punch";
-        document.getElementById('moveButtonTwo').textContent="Ice Hammer";
-        document.getElementById('moveButtonThree').textContent="Close Combat";
-        document.getElementById('moveButtonFour').textContent="Earthquake";
     }
     if(user.party[0]==oranguru){
+        activeMon=oranguru;
         setTimeout(showOranguru, 2500);
         $('#oranStartBattle').html("Go! Oranguru!");
         setTimeout(showOrBM, 2500);
         setTimeout(hideOrBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Nasty Plot";
-        document.getElementById('moveButtonTwo').textContent="Psychic";
-        document.getElementById('moveButtonThree').textContent="Focus Blast";
-        document.getElementById('moveButtonFour').textContent="Thunderbolt";
     }
     if(user.party[0]==vikavolt){
+        activeMon=vikavolt;
         setTimeout(showVikavolt, 2500);
         $('#vikaStartBattle').html("Go! Vikavolt!");
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
-        document.getElementById('moveButtonOne').textContent="Agility";
-        document.getElementById('moveButtonTwo').textContent="Thunderbolt";
-        document.getElementById('moveButtonThree').textContent="Bug Buzz";
-        document.getElementById('moveButtonFour').textContent="Hidden Power Fire";
     }
+    document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
+    document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
+    document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
+    document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
+}
+
+function useMoveOne(){
+    console.log(activeMon.name+" used "+activeMon.moves[0].name+"!");
+}
+function useMoveTwo(){
+    console.log(activeMon.name+" used "+activeMon.moves[1].name+"!");
+}
+function useMoveThree(){
+    console.log(activeMon.name+" used "+activeMon.moves[2].name+"!");
+}
+function useMoveFour(){
+    console.log(activeMon.name+" used "+activeMon.moves[3].name+"!");
 }
 
 function showMoveButtons(){
@@ -698,7 +614,6 @@ function showMoveButtons(){
     $('#moveButtonThree').show();
     $('#moveButtonFour').show();
 }
-
 
 function backToHub(){
     $('#fightTable').show();
