@@ -593,7 +593,9 @@ function ubSeven(){
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
     document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
+    console.log(decidueye.weaknesses);
 }
+
 
 function useMoveOne(){
     console.log(activeMon.name+" used "+activeMon.moves[0].name+"!");

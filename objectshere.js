@@ -26,6 +26,9 @@ function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialA
         this.moves.push(move);
     };
     this.weaknesses=[];
+    this.addWeakness=function(weakness){
+        this.weaknesses.push(weakness);
+    }
     this.neutralDamage=[];
     this.resistances=[];
     this.immunities=[];
@@ -51,6 +54,7 @@ function Enemy(name, type1, type2, maxhp, currenthp, attack, defense, specialAtt
         this.moves.push(move);
     }
     this.weaknesses=[];
+
     this.neutralDamage=[];
     this.resistances=[];
     this.immunities=[];
@@ -118,7 +122,12 @@ decidueye.addMove(swordsDance);
 decidueye.addMove(spiritShackle);
 decidueye.addMove(leafBlade);
 decidueye.addMove(suckerPunch);
-decidueye.weaknesess=["Flying", "Ghost", "Fire", "Ice", "Dark"];
+
+decidueye.addWeakness("Flying");
+decidueye.addWeakness("Ghost");
+decidueye.addWeakness("Fire");
+decidueye.addWeakness("Ice");
+decidueye.addWeakness("Dark");
 decidueye.neutralDamage=["Poison", "Rock", "Bug", "Steel", "Psychic", "Dragon", "Fairy"];
 decidueye.resistances=["Ground", "Water", "Grass", "Electric"];
 decidueye.immunities=["Normal", "Fighting"];
