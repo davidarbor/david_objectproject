@@ -593,21 +593,82 @@ function ubSeven(){
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
     document.getElementById('moveButtonFour').textContent=activeMon.moves[3].name;
-    console.log(decidueye.weaknesses);
 }
-
 
 function useMoveOne(){
     console.log(activeMon.name+" used "+activeMon.moves[0].name+"!");
+    var stringOne=activeMon.moves[0].type;
+    for(i=0; i<currentUB.weaknesses.length; i++){
+        if(currentUB.weaknesses[i]==stringOne && activeMon.moves[0].basePower!=0){
+            console.log("It's super-effective!");
+        }
+    }
+    for(i=0; i<currentUB.resistances.length; i++){
+        if(currentUB.resistances[i]==stringOne && activeMon.moves[0].basePower!=0){
+            console.log("It's not very effective.");
+        }
+    }
+    for(i=0; i<currentUB.immunities.length; i++){
+        if(currentUB.immunities[i]==stringOne && activeMon.moves[0].basePower!=0){
+            console.log("It doesn't affect "+currentUB.name+"...");
+        }
+    }
 }
 function useMoveTwo(){
     console.log(activeMon.name+" used "+activeMon.moves[1].name+"!");
+    var stringTwo=activeMon.moves[1].type;
+    for(i=0; i<currentUB.weaknesses.length; i++){
+        if(currentUB.weaknesses[i]==stringTwo && activeMon.moves[1].basePower!=0){
+            console.log("It's super-effective!");
+        }
+    }
+    for(i=0; i<currentUB.resistances.length; i++){
+        if(currentUB.resistances[i]==stringTwo && activeMon.moves[1].basePower!=0){
+            console.log("It's not very effective.");
+        }
+    }
+    for(i=0; i<currentUB.immunities.length; i++){
+        if(currentUB.immunities[i]==stringTwo && activeMon.moves[1].basePower!=0){
+            console.log("It doesn't affect "+currentUB.name+"...");
+        }
+    }
 }
 function useMoveThree(){
     console.log(activeMon.name+" used "+activeMon.moves[2].name+"!");
+    var stringThree=activeMon.moves[2].type;
+    for(i=0; i<currentUB.weaknesses.length; i++){
+        if(currentUB.weaknesses[i]==stringThree && activeMon.moves[2].basePower!=0){
+            console.log("It's super-effective!");
+        }
+    }for(i=0; i<currentUB.resistances.length; i++){
+        if(currentUB.resistances[i]==stringThree && activeMon.moves[2].basePower!=0){
+            console.log("It's not very effective.");
+        }
+    }
+    for(i=0; i<currentUB.immunities.length; i++){
+        if(currentUB.immunities[i]==stringThree && activeMon.moves[2].basePower!=0){
+            console.log("It doesn't affect "+currentUB.name+"...");
+        }
+    }
 }
 function useMoveFour(){
     console.log(activeMon.name+" used "+activeMon.moves[3].name+"!");
+    var stringFour=activeMon.moves[3].type;
+    for(i=0; i<currentUB.weaknesses.length; i++){
+        if(currentUB.weaknesses[i]==stringFour && activeMon.moves[3].basePower!=0){
+            console.log("It's super-effective!");
+        }
+    }
+    for(i=0; i<currentUB.resistances.length; i++){
+        if(currentUB.resistances[i]==stringFour && activeMon.moves[3].basePower!=0){
+            console.log("It's not very effective.");
+        }
+    }
+    for(i=0; i<currentUB.immunities.length; i++){
+        if(currentUB.immunities[i]==stringFour && activeMon.moves[3].basePower!=0){
+            console.log("It doesn't affect "+currentUB.name+"...");
+        }
+    }
 }
 
 function showMoveButtons(){
@@ -615,6 +676,12 @@ function showMoveButtons(){
     $('#moveButtonTwo').show();
     $('#moveButtonThree').show();
     $('#moveButtonFour').show();
+}
+function hideMoveButtons(){
+    $('#moveButtonOne').hide();
+    $('#moveButtonTwo').hide();
+    $('#moveButtonThree').hide();
+    $('#moveButtonFour').hide();
 }
 
 function backToHub(){
