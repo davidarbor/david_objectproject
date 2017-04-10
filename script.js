@@ -605,7 +605,7 @@ function useMoveOne(){
     }
     for(i=0; i<currentUB.resistances.length; i++){
         if(currentUB.resistances[i]==stringOne && activeMon.moves[0].basePower!=0){
-            console.log("It's not very effective.");
+            console.log("It's not very effective...");
         }
     }
     for(i=0; i<currentUB.immunities.length; i++){
@@ -624,7 +624,7 @@ function useMoveTwo(){
     }
     for(i=0; i<currentUB.resistances.length; i++){
         if(currentUB.resistances[i]==stringTwo && activeMon.moves[1].basePower!=0){
-            console.log("It's not very effective.");
+            console.log("It's not very effective...");
         }
     }
     for(i=0; i<currentUB.immunities.length; i++){
@@ -642,7 +642,7 @@ function useMoveThree(){
         }
     }for(i=0; i<currentUB.resistances.length; i++){
         if(currentUB.resistances[i]==stringThree && activeMon.moves[2].basePower!=0){
-            console.log("It's not very effective.");
+            console.log("It's not very effective...");
         }
     }
     for(i=0; i<currentUB.immunities.length; i++){
@@ -661,7 +661,7 @@ function useMoveFour(){
     }
     for(i=0; i<currentUB.resistances.length; i++){
         if(currentUB.resistances[i]==stringFour && activeMon.moves[3].basePower!=0){
-            console.log("It's not very effective.");
+            console.log("It's not very effective...");
         }
     }
     for(i=0; i<currentUB.immunities.length; i++){
