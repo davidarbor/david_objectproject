@@ -184,7 +184,7 @@ nihilego.addMove(sludgeWave);
 nihilego.addMove(powerGem);
 nihilego.addMove(dazzlingGleam);
 nihilego.addMove(hiddenPowerFire);
-nihilego.weaknesses=["Ground", "Steel", "Water", "Pyshcic"];
+nihilego.weaknesses=["Ground", "Steel", "Water", "Psychic"];
 nihilego.neutralDamage=["Fighting", "Rock", "Ghost", "Grass", "Electric", "Ice", "Dragon", "Dark"];
 nihilego.resistances=["Normal", "Flying", "Poison", "Bug", "Fire", "Fairy"];
 nihilego.immunities=[];
