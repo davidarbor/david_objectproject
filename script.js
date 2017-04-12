@@ -597,6 +597,7 @@ function ubSeven(){
 
 function useMoveOne(){
     console.log(activeMon.name+" used "+activeMon.moves[0].name+"!");
+
     var stringOne=activeMon.moves[0].type;
     for(i=0; i<currentUB.weaknesses.length; i++){
         if(currentUB.weaknesses[i]==stringOne && activeMon.moves[0].basePower!=0){
@@ -612,6 +613,22 @@ function useMoveOne(){
         if(currentUB.immunities[i]==stringOne && activeMon.moves[0].basePower!=0){
             console.log("It doesn't affect "+currentUB.name+"...");
         }
+    }
+    if(activeMon.moves[0]==swordsDance){
+        console.log(activeMon.name+"'s Attack rose sharply!");
+    }
+    if(activeMon.moves[0]==workUp){
+        console.log(activeMon.name+"'s Attack rose!");
+        console.log(activeMon.name+"'s Sepcial Attack rose!");
+    }
+    if(activeMon.moves[0]==powerUpPunch){
+        console.log(activeMon.name+"'s Attack rose!");
+    }
+    if(activeMon.moves[0]==nastyPlot){
+        console.log(activeMon.name+"'s Special Attack rose sharply!");
+    }
+    if(activeMon.moves[0]==agility){
+        console.log(activeMon.name+"'s Speed rose sharply!");
     }
 }
 function useMoveTwo(){
@@ -632,6 +649,24 @@ function useMoveTwo(){
             console.log("It doesn't affect "+currentUB.name+"...");
         }
     }
+    if(activeMon.moves[1]==spiritShackle){
+
+    }
+    if(activeMon.moves[1]==flareBlitz){
+
+    }
+    if(activeMon.moves[1]==scald){
+
+    }
+    if(activeMon.moves[1]==iceHammer){
+        console.log(activeMon.name+"'s Speed fell!");
+    }
+    if(activeMon.moves[1]==psychic){
+
+    }
+    if(activeMon.moves[1]==thunderbolt){
+
+    }
 }
 function useMoveThree(){
     console.log(activeMon.name+" used "+activeMon.moves[2].name+"!");
@@ -649,6 +684,25 @@ function useMoveThree(){
         if(currentUB.immunities[i]==stringThree && activeMon.moves[2].basePower!=0){
             console.log("It doesn't affect "+currentUB.name+"...");
         }
+    }
+    if(activeMon.moves[2]==leafBlade){
+
+    }
+    if(activeMon.moves[2]==darkestLariat){
+
+    }
+    if(activeMon.moves[2]==moonblast){
+
+    }
+    if(activeMon.moves[2]==closeCombat){
+        console.log(activeMon.name+"'s Defense fell!");
+        console.log(activeMon.name+"'s Special Defense fell!");
+    }
+    if(activeMon.moves[2]==focusBlast){
+
+    }
+    if(activeMon.moves[2]==bugBuzz){
+
     }
 }
 function useMoveFour(){
@@ -668,6 +722,21 @@ function useMoveFour(){
         if(currentUB.immunities[i]==stringFour && activeMon.moves[3].basePower!=0){
             console.log("It doesn't affect "+currentUB.name+"...");
         }
+    }
+    if(activeMon.moves[3]==suckerPunch){
+
+    }
+    if(activeMon.moves[3]==earthquake){
+
+    }
+    if(activeMon.moves[3]==psychic){
+
+    }
+    if(activeMon.moves[3]==thunderbolt){
+
+    }
+    if(activeMon.moves[3]==hiddenPowerFire){
+
     }
 }
 
