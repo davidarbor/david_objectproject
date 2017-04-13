@@ -619,7 +619,7 @@ function useMoveOne(){
     }
     if(activeMon.moves[0]==workUp){
         console.log(activeMon.name+"'s Attack rose!");
-        console.log(activeMon.name+"'s Sepcial Attack rose!");
+        console.log(activeMon.name+"'s Special Attack rose!");
     }
     if(activeMon.moves[0]==powerUpPunch){
         console.log(activeMon.name+"'s Attack rose!");
@@ -656,7 +656,9 @@ function useMoveTwo(){
 
     }
     if(activeMon.moves[1]==scald){
-
+        if(scaldArray[scaldIdx]=="burn"){
+            console.log(currentUB.name+"was burned!");
+        }
     }
     if(activeMon.moves[1]==iceHammer){
         console.log(activeMon.name+"'s Speed fell!");
