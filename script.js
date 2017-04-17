@@ -657,7 +657,8 @@ function useMoveTwo(){
     }
     if(activeMon.moves[1]==scald){
         if(scaldArray[scaldIdx]=="burn"){
-            console.log(currentUB.name+"was burned!");
+            console.log(currentUB.name+" was burned!");
+            currentUB.isBurned==true;
         }
     }
     if(activeMon.moves[1]==iceHammer){

@@ -20,7 +20,11 @@ function Partner(name, type1, type2, maxhp, currenthp, attack, defense, specialA
     this.specialAttack=specialAttack;
     this.specialDefense=specialDefense;
     this.speed=speed;
-    isAlive=true;
+    this.isAlive=true;
+    this.isBurned=false;
+    this.isParalyzed=false;
+    this.isPoisoned=false;
+    this.isFrozen=false;
     this.moves=[];
     this.addMove=function(move){
         this.moves.push(move);
@@ -48,7 +52,9 @@ function Enemy(name, type1, type2, maxhp, currenthp, attack, defense, specialAtt
     this.specialAttack=specialAttack;
     this.specialDefense=specialDefense;
     this.speed=speed;
-    isAlive=true;
+    this.isAlive=true;
+    this.isBurned=false;
+    this.isParalyzed=false;
     this.moves=[];
     this.addMove=function(move){
         this.moves.push(move);
@@ -88,6 +94,7 @@ var iceHammer=new Move("Ice Hammer", "Ice", "Physical", 100, 90, 0);
 var closeCombat=new Move("Close Combat", "Fighting", "Physical", 120, 100, 0);
 var nastyPlot=new Move("Nasty Plot", "Dark", "Status", 0, 0, 0);
 var focusBlast=new Move("Focus Blast", "Fighting", "Special", 120, 70, 0);
+var thunderbolt=new Move("Thunderbolt", "Electric", "Special", 90, 100, 0);
 var agility=new Move("Agility", "Psychic", "Status", 0, 0, 0);
 var bugBuzz=new Move("Bug Buzz", "Bug", "Special", 90, 100, 0);
 
@@ -102,7 +109,6 @@ var stoneEdge=new Move("Stone Edge", "Rock", "Physical", 100, 80, 0);
 var highJumpKick=new Move("High Jump Kick", "Fighting", "Physical", 130, 90, 0);
 var iceBeam=new Move("Ice Beam", "Ice", "Special", 90, 100, 0);
 var poisonJab=new Move("Poison Jab", "Poison", "Physical", 80, 100, 0);
-var thunderbolt=new Move("Thunderbolt", "Electric", "Special", 90, 100, 0);
 var hiddenPowerIce=new Move("Hidden Power Ice", "Ice", "Special", 60, 100, 0);
 var grassKnot=new Move("Grass Knot", "Grass", "Special", 80, 100, 0);
 var smartStrike=new Move("Smart Strike", "Steel", "Physical", 70, 100, 0);

@@ -57,4 +57,3 @@ var fireBlastIdx=Math.floor(Math.random() * fireBlastArray.length);
 if(scaldArray[scaldIdx]=="burn"){
     console.log("CRAB BURN");
 }
-
