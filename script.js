@@ -597,7 +597,6 @@ function ubSeven(){
 
 function useMoveOne(){
     console.log(activeMon.name+" used "+activeMon.moves[0].name+"!");
-
     var stringOne=activeMon.moves[0].type;
     for(i=0; i<currentUB.weaknesses.length; i++){
         if(currentUB.weaknesses[i]==stringOne && activeMon.moves[0].basePower!=0){
@@ -649,26 +648,41 @@ function useMoveTwo(){
             console.log("It doesn't affect "+currentUB.name+"...");
         }
     }
-    if(activeMon.moves[1]==spiritShackle){
-
-    }
     if(activeMon.moves[1]==flareBlitz){
-
+        var flareBlitzIdx=Math.floor(Math.random() * flareBlitzArray.length);
+        if(flareBlitzArray[flareBlitzIdx]=="burn" && currentUB.isBurned==false){
+            console.log(currentUB.name+" was burned!");
+            currentUB.isBurned=true;
+        }
     }
     if(activeMon.moves[1]==scald){
-        if(scaldArray[scaldIdx]=="burn"){
+        var scaldIdx=Math.floor(Math.random() * scaldArray.length);
+        if(scaldArray[scaldIdx]=="burn" && currentUB.isBurned==false){
             console.log(currentUB.name+" was burned!");
-            currentUB.isBurned==true;
+            currentUB.isBurned=true;
         }
     }
     if(activeMon.moves[1]==iceHammer){
-        console.log(activeMon.name+"'s Speed fell!");
+        var iceHammerIdx=Math.floor(Math.random() * iceHammerArray.length);
+        if(iceHammerArray[iceHammerIdx]=="hit"){
+            console.log(activeMon.name+"'s Speed fell!");
+        }
+        else{
+            console.log(currentUB.name+" avoided the attack!");
+        }
     }
     if(activeMon.moves[1]==psychic){
-
+        var psychicIdx=Math.floor(Math.random() * psychicArray.length);
+        if(psychicArray[psychicIdx]=="drop"){
+            console.log(currentUB.name+"'s Special Defense fell!");
+        }
     }
     if(activeMon.moves[1]==thunderbolt){
-
+        var thunderboltIdx=Math.floor(Math.random() * thunderboltArray.length);
+        if(thunderboltArray[thunderboltIdx]=="paralysis" && currentUB.isParalyzed==false){
+            console.log(currentUB.name+" is paralyzed! It may be unable to move!");
+            currentUB.isParalyzed=true;
+        }
     }
 }
 function useMoveThree(){
@@ -678,7 +692,8 @@ function useMoveThree(){
         if(currentUB.weaknesses[i]==stringThree && activeMon.moves[2].basePower!=0){
             console.log("It's super-effective!");
         }
-    }for(i=0; i<currentUB.resistances.length; i++){
+    }
+    for(i=0; i<currentUB.resistances.length; i++){
         if(currentUB.resistances[i]==stringThree && activeMon.moves[2].basePower!=0){
             console.log("It's not very effective...");
         }
@@ -689,23 +704,29 @@ function useMoveThree(){
         }
     }
     if(activeMon.moves[2]==leafBlade){
-
-    }
-    if(activeMon.moves[2]==darkestLariat){
-
+        var leafBladeIdx=Math.floor(Math.random() * leafBladeArray.length);
     }
     if(activeMon.moves[2]==moonblast){
-
+        var moonblastIdx=Math.floor(Math.random() * moonblastArray.length);
+        if(moonblastArray[moonblastIdx]!="no drop"){
+            console.log(currentUB.name+"'s Special Attack fell!");
+        }
     }
     if(activeMon.moves[2]==closeCombat){
         console.log(activeMon.name+"'s Defense fell!");
         console.log(activeMon.name+"'s Special Defense fell!");
     }
     if(activeMon.moves[2]==focusBlast){
-
+        var focusBlastIdx=Math.floor(Math.random() * focusBlastArray.length);
+        if(focusBlastArray[focusBlastIdx]!="no drop"){
+            console.log(currentUB.name+"'s Special Defense fell!");
+        }
     }
     if(activeMon.moves[2]==bugBuzz){
-
+        var bugBuzzIdx=Math.floor(Math.random() * bugBuzzArray.length);
+        if(bugBuzzArray[bugBuzzIdx]!="no drop"){
+            console.log(currentUB.name+"'s Special Defense fell!");
+        }
     }
 }
 function useMoveFour(){
@@ -729,17 +750,18 @@ function useMoveFour(){
     if(activeMon.moves[3]==suckerPunch){
 
     }
-    if(activeMon.moves[3]==earthquake){
-
-    }
     if(activeMon.moves[3]==psychic){
-
+        var psychicIdx=Math.floor(Math.random() * psychicArray.length);
+        if(psychicArray[psychicIdx]!="no drop"){
+            console.log(currentUB.name+"'s Special Defense fell!");
+        }
     }
     if(activeMon.moves[3]==thunderbolt){
-
-    }
-    if(activeMon.moves[3]==hiddenPowerFire){
-
+        var thunderboltIdx=Math.floor(Math.random() * thunderboltArray.length);
+        if(thunderboltArray[thunderboltIdx]=="paralysis" && currentUB.isParalyzed==false){
+            console.log(currentUB.name+" is paralyzed! It may be unable to move!");
+            currentUB.isParalyzed=true;
+        }
     }
 }
 
