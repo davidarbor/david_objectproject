@@ -293,6 +293,21 @@ body {
     border-color: darkred;
 }
 
+#inBattleSwitch{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+#changeToSecondMember{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#changeToThirdMember{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
 
 #openingMessage{
     font: bold 60px cambria, serif;

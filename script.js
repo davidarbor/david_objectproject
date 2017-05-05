@@ -196,11 +196,37 @@ function exitSwitch(){
     $('#exitSwitch').hide();
 }
 
+function changeToSecondMember(){
+    var secondSwap=confirm("Would you like to switch to "+user.party[1].name+"?");
+    if(secondSwap==true){
+        battleSwitch(user.party, 0, 1);
+        if(user.party[1]==decidueye){
+            activeMon=decidueye;
+        }
+        if(user.party[1]==incineroar){
+            activeMon=incineroar;
+        }
+        if(user.party[1]==primarina){
+            activeMon=primarina;
+        }
+        if(user.party[1]==crabominable){
+            activeMon=crabominable;
+        }
+        if(user.party[1]==oranguru){
+            activeMon=oranguru;
+        }
+        if(user.party[1]==vikavolt){
+            activeMon=vikavolt;
+        }
+    }
+}
+
 function ubOne(){
     currentUB=nihilego;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
+    setTimeout(showSwitchButton, 4500);
     setTimeout(showNihilego, 500);
     $('#nihiStartBattle').html("Nihilego appeared!");
     setTimeout(showNiBM, 500);
@@ -247,6 +273,7 @@ function ubOne(){
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
     }
+    activeMon.currenthp=activeMon.maxhp;
     document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
@@ -257,8 +284,9 @@ function ubTwo(){
     currentUB=buzzwole;
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
-    setTimeout(showBuzzwole, 500);
     setTimeout(showMoveButtons, 4500);
+    setTimeout(showSwitchButton, 4500);
+    setTimeout(showBuzzwole, 500);
     $('#buzzStartBattle').html("Buzzwole appeared!");
     setTimeout(showBuBM, 500);
     setTimeout(hideBuBM, 1500);
@@ -304,6 +332,7 @@ function ubTwo(){
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
     }
+    activeMon.currenthp=activeMon.maxhp;
     document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
@@ -315,6 +344,7 @@ function ubThree(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
+    setTimeout(showSwitchButton, 4500);
     setTimeout(showPheromosa, 500);
     $('#pherStartBattle').html("Pheromosa appeared!");
     setTimeout(showPhBM, 500);
@@ -361,6 +391,7 @@ function ubThree(){
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
     }
+    activeMon.currenthp=activeMon.maxhp;
     document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
@@ -372,6 +403,7 @@ function ubFour(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
+    setTimeout(showSwitchButton, 4500);
     setTimeout(showXurkitree, 500);
     $('#xurkStartBattle').html("Xurkitree appeared!");
     setTimeout(showXuBM, 500);
@@ -418,6 +450,7 @@ function ubFour(){
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
     }
+    activeMon.currenthp=activeMon.maxhp;
     document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
@@ -429,6 +462,7 @@ function ubFive(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
+    setTimeout(showSwitchButton, 4500);
     setTimeout(showKartana, 500);
     $('#kartStartBattle').html("Kartana appeared!");
     setTimeout(showKaBM, 500);
@@ -475,6 +509,7 @@ function ubFive(){
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
     }
+    activeMon.currenthp=activeMon.maxhp;
     document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
@@ -486,6 +521,7 @@ function ubSix(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
+    setTimeout(showSwitchButton, 4500);
     setTimeout(showCelesteela, 500);
     $('#celeStartBattle').html("Celesteela appeared!");
     setTimeout(showCeBM, 500);
@@ -532,6 +568,7 @@ function ubSix(){
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
     }
+    activeMon.currenthp=activeMon.maxhp;
     document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
@@ -543,6 +580,7 @@ function ubSeven(){
     $('#fightTable').hide();
     $('#changeFirstPartyMember').hide();
     setTimeout(showMoveButtons, 4500);
+    setTimeout(showSwitchButton, 4500);
     setTimeout(showGuzzlord, 500);
     $('#guzzStartBattle').html("Guzzlord appeared!");
     setTimeout(showGuBM, 500);
@@ -589,6 +627,7 @@ function ubSeven(){
         setTimeout(showViBM, 2500);
         setTimeout(hideViBM, 3500);
     }
+    activeMon.currenthp=activeMon.maxhp;
     document.getElementById('moveButtonOne').textContent=activeMon.moves[0].name;
     document.getElementById('moveButtonTwo').textContent=activeMon.moves[1].name;
     document.getElementById('moveButtonThree').textContent=activeMon.moves[2].name;
@@ -776,6 +815,23 @@ function hideMoveButtons(){
     $('#moveButtonTwo').hide();
     $('#moveButtonThree').hide();
     $('#moveButtonFour').hide();
+}
+
+function showSwitchButton(){
+    $('#inBattleSwitch').show();
+}
+
+function makeSwitches(){
+    $('#inBattleSwitch').hide();
+    $('#changeToSecondMember').show();
+    $('#changeToThirdMember').show();
+}
+
+function battleSwitch(input, index_A, index_B) {
+    var temp = input[index_A];
+
+    input[index_A] = input[index_B];
+    input[index_B] = temp;
 }
 
 function backToHub(){
@@ -1011,6 +1067,10 @@ $(document).ready(function(){
     $('#moveButtonTwo').hide();
     $('#moveButtonThree').hide();
     $('#moveButtonFour').hide();
+
+    $('#inBattleSwitch').hide();
+    $('#changeToSecondMember').hide();
+    $('#changeToThirdMember').hide();
 });
 
 function chooseDecidueye(){
